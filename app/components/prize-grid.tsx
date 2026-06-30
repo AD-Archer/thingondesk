@@ -63,8 +63,8 @@ const prizes = [
   {
     name: "Amazon Fire HD 8 tablet, 8” HD Display, 32 GB (2022 release)",
     price: 67.99,
-    href: "https://www.amazon.com/All-new-Fire-HD-8-tablet/dp/B099Z8HLHT/ref=sr_1_12?crid=2JWNZ6MNH1C0J&dib=eyJ2IjoiMSJ9.kmk1i3ICeCE6mAvOFzj4rOrF9p39jbS421QsxHI2CqJGHBZL7JbERwaw3uxnkaKzU8EGj-R7RpN99cUXZngnmqWUll8ygZ0TKNPxn2JslCRKeuc0_XVES1CSb2d5lSPgCLLDZ8nPtQntINLQXGlL2LA4HnvM-P2XcBoa0CsBxOYAotbpJQmjSrEZer-nkAKBMN-PhlSIDrDBnXuQNEGwtVFVpC92sDjiLp0DLUUfbkY.OmYuU9d2AETavKOXLsO_uXPlMEzbyd5T-QTtEXBhHNo&dib_tag=se&keywords=amazon%2Bfire&qid=1782845917&sprefix=amazon%2Bfir%2Caps%2C166&sr=8-12&th=1",
-    image: "https://m.media-amazon.com/images/I/716NHsSc3HL._AC_SL1500_.jpg",
+    href: "https://www.amazon.com/dp/B0CVDN4QS6?th=1",
+    image: "https://m.media-amazon.com/images/I/717z5zjuBWL._AC_SL1500_.jpg",
   },
   {
     name: "Like-New Amazon Fire 7 tablet (newest model)",
