@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ChronoDesk",
-  description: "A simple device to keep you productive at your desk.",
+  title: "ChronoGrowth",
+  description:
+    "Build a desk companion that shows time, progress, or growth and win desk prizes.",
 };
 
 export default function RootLayout({

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { ExternalPrizeLink } from "./external-prize-link";
-
-const SALES_TAX_RATE = 0.08875;
-const DOLLARS_PER_HOUR = 5;
+import { PrizeHours } from "./prize-hours";
 
 const prizes = [
   {
@@ -62,54 +60,60 @@ const prizes = [
     image:
       "https://shop.trmnl.com/cdn/shop/files/og-black-stand_dd52ba52-e32b-48aa-9a85-5a4d76878383.jpg?v=1772066153&width=1400",
   },
+  {
+    name: "Amazon Fire HD 8 tablet, 8” HD Display, 32 GB (2022 release)",
+    price: 67.99,
+    href: "https://www.amazon.com/All-new-Fire-HD-8-tablet/dp/B099Z8HLHT/ref=sr_1_12?crid=2JWNZ6MNH1C0J&dib=eyJ2IjoiMSJ9.kmk1i3ICeCE6mAvOFzj4rOrF9p39jbS421QsxHI2CqJGHBZL7JbERwaw3uxnkaKzU8EGj-R7RpN99cUXZngnmqWUll8ygZ0TKNPxn2JslCRKeuc0_XVES1CSb2d5lSPgCLLDZ8nPtQntINLQXGlL2LA4HnvM-P2XcBoa0CsBxOYAotbpJQmjSrEZer-nkAKBMN-PhlSIDrDBnXuQNEGwtVFVpC92sDjiLp0DLUUfbkY.OmYuU9d2AETavKOXLsO_uXPlMEzbyd5T-QTtEXBhHNo&dib_tag=se&keywords=amazon%2Bfire&qid=1782845917&sprefix=amazon%2Bfir%2Caps%2C166&sr=8-12&th=1",
+    image: "https://m.media-amazon.com/images/I/716NHsSc3HL._AC_SL1500_.jpg",
+  },
+  {
+    name: "Like-New Amazon Fire 7 tablet (newest model)",
+    price: 50,
+    href: "https://www.amazon.com/Like-New-Amazon-display-10-hour-battery/dp/B099GYVGW4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Xqi1fAXbYVaVQDpectnL0hX8ExQITrTc4o_ItrC3uqUOqauZDQnOCTFTcB1c_Bw60SjjevSTJzZQYtpur7LHuq89ku07y2yqQJwfoSRbJXxbyn9_MsRXX_vWzKgzINLUMUPdtx-Rf4fTVWtGq32wwr31IohSg9jyYZZG1vw9Fvdyxjyf20Fyw_Xt7PeXeDefDs5GT7eg_OF03kQIwpetmaPhfFRXn0pQ-eKVgYZPw_XqMEBdAwLOjVQUorm3oqiwY91NejTRkg4rJH_lMbmMzLry2KWqpGp1K6eMZoOaVoo.BhrGFE6kBj5HND71FjvE61QH68F6HLZACFdjMJqtPtE&dib_tag=se&keywords=amazon+fire+5&qid=1782846063&s=amazon-devices&sr=1-1&ufe=app_do%3Aamzn1.fos.ed73e2ba-4d06-4781-aee7-c317fe036206",
+    image: "https://m.media-amazon.com/images/I/61pZPRMTAdL._AC_SL1000_.jpg",
+  },
 ];
-
-function getPrizeHours(price: number) {
-  return Math.ceil((price + price * SALES_TAX_RATE) / DOLLARS_PER_HOUR);
-}
 
 export function PrizeGrid() {
   return (
-    <section className="mt-10 w-full" aria-labelledby="prizes-heading">
+    <section
+      className="mx-auto w-full max-w-6xl"
+      aria-labelledby="prizes-heading"
+    >
       <h2
         id="prizes-heading"
-        className="text-center text-2xl font-bold text-zinc-900 dark:text-zinc-50"
+        className="font-deepwood text-center text-5xl text-[#251407] sm:text-6xl"
       >
-        Prizes
+        Prize Shelf
       </h2>
+      <p className="mx-auto mt-3 max-w-2xl text-center text-lg font-semibold leading-7 text-[#4d3421]">
+        Pick a target, build something real, and cash your hours into desk gear.
+      </p>
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {prizes.map((prize) => {
-          const hours = getPrizeHours(prize.price);
-
           return (
             <ExternalPrizeLink
-              key={prize.name}
+              key={`${prize.name}-${prize.href}`}
               href={prize.href}
-              className="flex min-h-72 flex-col rounded-lg border border-zinc-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700"
+              description="Click Okay to open the prize link in a new tab."
+              className="group flex min-h-[23rem] flex-col rounded-lg border-2 border-[#251407] bg-white p-4 shadow-[7px_7px_0_#251407] transition hover:-translate-y-1 hover:shadow-[10px_10px_0_#78d94f]"
             >
-              <div className="relative h-48 overflow-hidden rounded-md bg-zinc-100 dark:bg-zinc-900 sm:h-52">
+              <div className="relative h-48 overflow-hidden rounded-md border-2 border-[#251407]/10 bg-[#f5efe2] sm:h-52">
                 {prize.image ? (
                   <Image
                     src={prize.image}
                     alt=""
                     fill
                     sizes="(min-width: 1024px) 300px, (min-width: 640px) 50vw, 100vw"
-                    className="object-contain p-4"
+                    className="object-contain p-4 transition duration-300 group-hover:scale-105"
                   />
                 ) : null}
               </div>
-              <h3 className="mt-4 min-h-14 text-lg font-semibold text-zinc-950 dark:text-zinc-50">
+              <h3 className="mt-4 min-h-14 text-lg font-black leading-6 text-[#251407]">
                 {prize.name}
               </h3>
-              <dl className="mt-auto flex items-end justify-between gap-4 pt-5">
-                <dt className="pb-1 text-sm text-zinc-500 dark:text-zinc-400">
-                  Hours required
-                </dt>
-                <dd className="text-3xl font-bold text-zinc-950 dark:text-zinc-50">
-                  {hours}
-                </dd>
-              </dl>
+              <PrizeHours price={prize.price} />
             </ExternalPrizeLink>
           );
         })}

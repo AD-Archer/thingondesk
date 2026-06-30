@@ -1,34 +1,40 @@
 "use client";
 
-import type { ReactNode } from "react";
+import type { AnchorHTMLAttributes, ReactNode } from "react";
 import { toast } from "sonner";
 
-type ExternalPrizeLinkProps = {
+type ExternalPrizeLinkProps = Omit<
+  AnchorHTMLAttributes<HTMLAnchorElement>,
+  "href" | "target" | "rel" | "onClick"
+> & {
   children: ReactNode;
   href: string;
-  className?: string;
+  description?: string;
 };
 
 export function ExternalPrizeLink({
   children,
   href,
   className,
+  description = "Click Okay to open this link in a new tab.",
+  ...props
 }: ExternalPrizeLinkProps) {
   return (
     <a
       href={href}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       className={className}
+      {...props}
       onClick={(event) => {
         event.preventDefault();
 
         toast("You are leaving ChronoGrowth.", {
-          description: "Click Okay to open the prize link in a new tab.",
+          description,
           action: {
             label: "Okay",
             onClick: () => {
-              window.open(href, "_blank", "noreferrer");
+              window.open(href, "_blank", "noopener,noreferrer");
             },
           },
         });
