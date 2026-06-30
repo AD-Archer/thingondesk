@@ -88,14 +88,14 @@ export function PrizeGrid() {
               href={prize.href}
               className="flex min-h-72 flex-col rounded-lg border border-zinc-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700"
             >
-              <div className="flex aspect-[4/3] items-center justify-center rounded-md bg-zinc-100 dark:bg-zinc-900">
+              <div className="relative h-48 overflow-hidden rounded-md bg-zinc-100 dark:bg-zinc-900 sm:h-52">
                 {prize.image ? (
                   <Image
                     src={prize.image}
                     alt=""
-                    width={320}
-                    height={240}
-                    className="h-full w-full object-contain"
+                    fill
+                    sizes="(min-width: 1024px) 300px, (min-width: 640px) 50vw, 100vw"
+                    className="object-contain p-4"
                   />
                 ) : null}
               </div>
