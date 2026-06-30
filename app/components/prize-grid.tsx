@@ -82,11 +82,11 @@ export function PrizeGrid() {
     >
       <h2
         id="prizes-heading"
-        className="font-deepwood text-center text-5xl text-[#251407] sm:text-6xl"
+        className="font-deepwood text-center text-5xl text-brand-dark sm:text-6xl"
       >
         Prize Shelf
       </h2>
-      <p className="mx-auto mt-3 max-w-2xl text-center text-lg font-semibold leading-7 text-[#4d3421]">
+      <p className="mx-auto mt-3 max-w-2xl text-center text-lg font-semibold leading-7 text-brand-dark/75">
         Pick a target, build something real, and cash your hours into desk gear.
       </p>
 
@@ -97,9 +97,9 @@ export function PrizeGrid() {
               key={`${prize.name}-${prize.href}`}
               href={prize.href}
               description="Click Okay to open the prize link in a new tab."
-              className="group flex min-h-[23rem] flex-col rounded-lg border-2 border-[#251407] bg-white p-4 shadow-[7px_7px_0_#251407] transition hover:-translate-y-1 hover:shadow-[10px_10px_0_#78d94f]"
+              className="group flex min-h-[23rem] flex-col rounded-lg border-2 border-brand-dark bg-white p-4 shadow-[7px_7px_0_#0c100d] transition hover:-translate-y-1 hover:shadow-[10px_10px_0_#415d43]"
             >
-              <div className="relative h-48 overflow-hidden rounded-md border-2 border-[#251407]/10 bg-[#f5efe2] sm:h-52">
+              <div className="relative h-48 overflow-hidden rounded-md border-2 border-brand-dark/10 bg-brand-light sm:h-52">
                 {prize.image ? (
                   <Image
                     src={prize.image}
@@ -110,7 +110,7 @@ export function PrizeGrid() {
                   />
                 ) : null}
               </div>
-              <h3 className="mt-4 min-h-14 text-lg font-black leading-6 text-[#251407]">
+              <h3 className="mt-4 min-h-14 text-lg font-black leading-6 text-brand-dark">
                 {prize.name}
               </h3>
               <PrizeHours price={prize.price} />
