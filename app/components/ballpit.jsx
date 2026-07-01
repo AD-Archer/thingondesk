@@ -26,6 +26,18 @@ import {
 } from "three";
 import { RoomEnvironment as z } from "three/examples/jsm/environments/RoomEnvironment.js";
 
+function canUseWebGL(canvas) {
+  try {
+    const gl =
+      canvas.getContext("webgl2") ||
+      canvas.getContext("webgl") ||
+      canvas.getContext("experimental-webgl");
+    return Boolean(gl);
+  } catch {
+    return false;
+  }
+}
+
 class x {
   #e;
   canvas;
@@ -797,11 +809,16 @@ export default function Ballpit({
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+    if (!canUseWebGL(canvas)) return;
 
-    spheresInstanceRef.current = createBallpit(canvas, {
-      followCursor,
-      ...props,
-    });
+    try {
+      spheresInstanceRef.current = createBallpit(canvas, {
+        followCursor,
+        ...props,
+      });
+    } catch {
+      spheresInstanceRef.current = null;
+    }
 
     return () => {
       spheresInstanceRef.current?.dispose();

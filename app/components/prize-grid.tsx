@@ -122,37 +122,41 @@ export function PrizeGrid() {
       className="mx-auto w-full max-w-6xl"
       aria-labelledby="prizes-heading"
     >
-      <h2
-        id="prizes-heading"
-        className="font-deepwood text-center text-5xl text-brand-dark sm:text-6xl"
-      >
-        Prize Shelf
-      </h2>
-      <p className="mx-auto mt-3 max-w-2xl text-center text-lg font-semibold leading-7 text-brand-dark/75">
-        Pick a target, build something real, and cash your hours into desk gear.
-      </p>
+      <div className="mx-auto max-w-3xl text-center">
+        <h2
+          id="prizes-heading"
+          className="mt-3 text-4xl font-black leading-tight text-brand-dark sm:text-5xl"
+        >
+          Desk gear with a reason to build.
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-base font-medium leading-7 text-brand-dark/72 sm:text-lg">
+          Create something nice that you would want to keep on your desk, and
+          we&apos;ll send you a way to display it, or something else to keep on
+          your desk! or a desk itself!
+        </p>
+      </div>
 
-      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {prizes.map((prize) => {
           return (
             <ExternalPrizeLink
               key={`${prize.name}-${prize.href}`}
               href={prize.href}
               description="Click Okay to open the prize link in a new tab."
-              className="group flex min-h-[23rem] flex-col rounded-lg border-2 border-brand-dark bg-white p-4 shadow-[7px_7px_0_#0c100d] transition hover:-translate-y-1 hover:shadow-[10px_10px_0_#415d43]"
+              className="group flex min-h-[23rem] flex-col rounded-lg border border-brand-dark/10 bg-white p-4 shadow-[0_18px_40px_rgba(37,22,5,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/40 hover:shadow-[0_22px_55px_rgba(65,93,67,0.16)]"
             >
-              <div className="relative h-48 overflow-hidden rounded-md border-2 border-brand-dark/10 bg-brand-light sm:h-52">
+              <div className="relative h-48 overflow-hidden rounded-md sm:h-52">
                 {prize.image ? (
                   <Image
                     src={prize.image}
                     alt=""
                     fill
                     sizes="(min-width: 1024px) 300px, (min-width: 640px) 50vw, 100vw"
-                    className="object-contain p-4 transition duration-300 group-hover:scale-105"
+                    className="object-contain p-4"
                   />
                 ) : null}
               </div>
-              <h3 className="mt-4 min-h-14 text-lg font-black leading-6 text-brand-dark">
+              <h3 className="mt-4 min-h-14 text-lg font-bold leading-6 text-brand-dark">
                 {prize.name}
               </h3>
               <PrizeHours price={prize.price} />

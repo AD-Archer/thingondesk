@@ -11,11 +11,11 @@ type PrizeHoursProps = {
 
 export function PrizeHours({ price }: PrizeHoursProps) {
   return (
-    <dl className="mt-auto flex items-end justify-between gap-4 border-t-2 border-brand-dark/15 pt-5">
-      <dt className="pb-1 text-sm font-bold uppercase text-brand-dark/70">
+    <dl className="mt-auto flex items-end justify-between gap-4 border-t border-brand-dark/10 pt-5">
+      <dt className="pb-1 text-lg font-black uppercase text-brand-dark/60">
         Hours required
       </dt>
-      <dd className="rounded-md bg-brand-gold px-3 py-1 text-3xl font-black text-brand-dark">
+      <dd className="rounded-md bg-brand-green px-3 py-1 text-2xl font-black text-brand-light shadow-[inset_0_-2px_0_rgba(37,22,5,0.18)]">
         {getPrizeHours(price)}
       </dd>
     </dl>

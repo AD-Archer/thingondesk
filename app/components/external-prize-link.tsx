@@ -29,7 +29,7 @@ export function ExternalPrizeLink({
       onClick={(event) => {
         event.preventDefault();
 
-        toast("You are leaving ChronoGrowth.", {
+        toast("You are leaving Thing on Desk(TOD).", {
           description,
           action: {
             label: "Okay",
