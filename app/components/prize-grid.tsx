@@ -127,7 +127,7 @@ export function PrizeGrid() {
           id="prizes-heading"
           className="mt-3 text-4xl font-black leading-tight text-brand-dark sm:text-5xl"
         >
-          Desk gear with a reason to build.
+          Need a way to display what you ship?
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-base font-medium leading-7 text-brand-dark/72 sm:text-lg">
           Create something nice that you would want to keep on your desk, and

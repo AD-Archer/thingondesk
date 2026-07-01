@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Ballpit from "./components/ballpit";
 import { ExternalPrizeLink } from "./components/external-prize-link";
 import { PrizeGrid } from "./components/prize-grid";
 
@@ -22,6 +21,23 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-brand-light font-sans text-brand-dark">
       <section className="relative isolate flex min-h-screen flex-col overflow-hidden bg-brand-dark px-5 py-5 text-brand-light sm:px-8 lg:px-12">
+        <video
+          className="absolute inset-0 -z-30 h-full w-full scale-105 object-cover blur-[3px] saturate-125"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(18,43,28,0.82)_0%,rgba(31,71,42,0.64)_42%,rgba(226,111,88,0.34)_100%)]" />
+        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_18%_25%,rgba(246,232,234,0.22),transparent_32%),linear-gradient(180deg,rgba(16,34,24,0.16),rgba(11,29,21,0.76)_78%,rgba(226,246,247,0.94))]" />
+        <div className="absolute inset-x-0 top-0 -z-10 h-1.5 bg-[#b9f2f8]" />
+        <div className="absolute inset-x-0 top-1.5 -z-10 h-1.5 bg-[#45c84b]" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-[linear-gradient(180deg,transparent,rgba(226,246,247,0.58))]" />
+
         <ExternalPrizeLink
           href="https://hackclub.com"
           className="absolute left-0 top-0 z-30 block w-24 transition-transform duration-300 hover:-translate-y-0.5 sm:w-32 lg:w-40"
@@ -38,103 +54,43 @@ export default function Home() {
           />
         </ExternalPrizeLink>
 
-        <Image
-          src="/images/CronoGrowthFlat.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="-z-30 object-cover opacity-[0.07]"
-        />
-        <div className="absolute inset-0 -z-20 bg-[linear-gradient(145deg,rgba(37,22,5,0.9),rgba(65,93,67,0.8)_52%,rgba(37,22,5,0.98))]" />
-        <div className="absolute inset-x-0 top-0 -z-10 h-1.5 bg-brand-red" />
-        <div className="absolute inset-x-0 top-1.5 -z-10 h-1.5 bg-brand-green" />
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-64 bg-[linear-gradient(180deg,transparent,#f6e8ea)]" />
-        <div className="absolute inset-0 -z-10 opacity-35 sm:opacity-45">
-          <Ballpit
-            aria-hidden
-            className="h-full w-full"
-            count={95}
-            gravity={0.16}
-            friction={0.985}
-            wallBounce={0.92}
-            followCursor
-            colors={[0x415d43, 0xef626c, 0xf6e8ea, 0x251605]}
-            ambientIntensity={1.45}
-            lightIntensity={260}
-            minSize={0.16}
-            maxSize={0.48}
-            size0={1.15}
-            maxVelocity={0.06}
-          />
-        </div>
-
         <header className="mx-auto flex w-full max-w-7xl items-center justify-end border-b border-brand-light/10 pb-5">
           <ExternalPrizeLink
             href="https://www.antonioarcher.com"
-            className="text-xs font-bold uppercase text-brand-light/75 underline decoration-brand-red/70 decoration-2 underline-offset-4 transition-colors duration-200 hover:text-brand-red hover:decoration-brand-red"
+            className="text-xs font-bold uppercase text-brand-light/80 underline decoration-brand-sky/80 decoration-2 underline-offset-4 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)] transition-colors duration-200 hover:text-brand-sky hover:decoration-brand-sky"
             description="Click Okay to open Archer YSWS in a new tab."
           >
             Archer YSWS
           </ExternalPrizeLink>
         </header>
 
-        <main className="mx-auto my-auto grid w-full max-w-7xl items-center gap-12 py-20 md:grid-cols-12 md:py-24">
-          <div className="z-10 flex flex-col items-start text-left md:col-span-7">
+        <main className="mx-auto my-auto flex w-full max-w-7xl items-center py-24 md:py-28">
+          <div className="z-10 flex max-w-4xl flex-col items-start text-left">
+            <p className="mb-5 inline-flex rounded-md border border-brand-light/25 bg-brand-dark/28 px-3 py-2 text-xs font-black uppercase tracking-wide text-brand-sky shadow-[0_12px_28px_rgba(0,0,0,0.16)] backdrop-blur-md">
+              thingondesk
+            </p>
 
-            <h1 className="max-w-3xl text-5xl font-black leading-[1.02] text-brand-light sm:text-6xl lg:text-7xl">
-              Build a desk toy win an iPad.
+            <h1 className="max-w-4xl text-5xl font-black leading-[1.02] text-brand-light drop-shadow-[0_5px_22px_rgba(0,0,0,0.5)] sm:text-6xl lg:text-7xl 2xl:text-8xl">
+              Build a thing on your desk. <br />Win an iPad.
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-brand-light/82">
+            <p className="mt-6 max-w-2xl text-lg font-semibold leading-8 text-brand-light/90 drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]">
               Make a clock, tracker, timer, calendar, a tree growing, river, or any small tool that helps show progress. Ship something real, then trade hours for something for your desk.
             </p>
 
             <div className="mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
               <a
                 href="#prizes"
-                className="inline-flex items-center justify-center rounded-lg bg-brand-red px-7 py-4 text-sm font-black uppercase text-white shadow-[0_14px_30px_rgba(239,98,108,0.22)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#dc4e59]"
+                className="inline-flex items-center justify-center rounded-lg border border-white/25 bg-[#ef626c] px-7 py-4 text-sm font-black uppercase text-white shadow-[0_16px_34px_rgba(239,98,108,0.42)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#d94f5a]"
               >
                 See the prizes
               </a>
               <a
                 href="#brief"
-                className="inline-flex items-center justify-center rounded-lg border border-brand-light/20 bg-brand-light/10 px-7 py-4 text-sm font-black uppercase text-brand-light backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-brand-red/50 hover:bg-brand-light/15"
+                className="inline-flex items-center justify-center rounded-lg border border-white/25 bg-[#ddd92a] px-7 py-4 text-sm font-black uppercase text-brand-dark shadow-[0_16px_34px_rgba(221,217,42,0.34)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f0ec38]"
               >
                 What to build
               </a>
-            </div>
-
-          </div>
-
-          <div className="z-10 flex w-full justify-center md:col-span-5">
-            <div className="relative flex w-full max-w-[34rem] items-center justify-center p-0">
-              <Image
-                src="/images/sunclock.png"
-                alt=""
-                width={500}
-                height={500}
-                priority
-                className="absolute right-3 top-3 h-24 w-24 rotate-6 object-contain opacity-55 sm:h-32 sm:w-32"
-              />
-              <Image
-                src="/images/CronoGrowth.png"
-                alt="Thing on Desk(TOD) displayed on a tablet"
-                width={652}
-                height={649}
-                priority
-                className="mx-auto h-auto w-full object-contain drop-shadow-[0_24px_48px_rgba(0,0,0,0.38)]"
-              />
-              <div className="absolute -bottom-8 -left-4 z-20 sm:-bottom-10">
-                <Image
-                  src="/images/tree.png"
-                  alt="Growth Tree"
-                  width={400}
-                  height={400}
-                  priority
-                  className="h-36 w-auto object-contain invert mix-blend-screen brightness-125 drop-shadow-[0_10px_18px_rgba(239,98,108,0.18)] sm:h-48"
-                />
-              </div>
             </div>
           </div>
         </main>
@@ -189,7 +145,7 @@ export default function Home() {
         <span>
           &copy; {new Date().getFullYear()} Hack Club made by kids for kids.
         </span>{" "}
-        <span>Thing on Desk(TOD) by Archer YSWS.</span>
+        <span>thingondesk by Archer YSWS.</span>
       </footer>
     </div>
   );

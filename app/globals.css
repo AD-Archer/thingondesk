@@ -7,8 +7,8 @@
 }
 
 :root {
-  --background: #f6e8ea;
-  --foreground: #251605;
+  --background: #e2f6f7;
+  --foreground: #102b1c;
   --font-deepwood: "Deepwood", Georgia, serif;
 }
 
@@ -17,18 +17,22 @@
   --color-foreground: var(--foreground);
   --font-sans: "Geist", "Geist Fallback", Arial, Helvetica, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", Consolas, monospace;
-  --color-brand-dark: #251605;
-  --color-brand-light: #f6e8ea;
-  --color-brand-red: #ef626c;
-  --color-brand-green: #415d43;
-  --color-brand-cream: #fff9f1;
+  --color-brand-dark: #102b1c;
+  --color-brand-light: #f7fff7;
+  --color-brand-red: #e26f58;
+  --color-brand-green: #2f7d38;
+  --color-brand-cream: #e2f6f7;
   --color-brand-ink: #251605;
+  --color-brand-sunset: #e26f58;
+  --color-brand-sky: #b9f2f8;
+  --color-brand-leaf: #45c84b;
+  --color-brand-moss: #728531;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #251605;
-    --foreground: #f6e8ea;
+    --background: #102b1c;
+    --foreground: #f7fff7;
   }
 }
 
@@ -39,7 +43,7 @@ body {
 }
 
 ::selection {
-  background: #ef626c;
+  background: #e26f58;
   color: #ffffff;
 }
 
@@ -49,22 +53,22 @@ body {
 
 .bg-grid-pattern {
   background-size: 32px 32px;
-  background-image: linear-gradient(rgba(246, 232, 234, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(246, 232, 234, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(247, 255, 247, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(247, 255, 247, 0.06) 1px, transparent 1px);
 }
 
 .bg-grid-light {
   background-size: 32px 32px;
-  background-image: linear-gradient(rgba(37, 22, 5, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37, 22, 5, 0.055) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(16, 43, 28, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 43, 28, 0.06) 1px, transparent 1px);
 }
 
 .paper-surface {
   background:
-    linear-gradient(135deg, rgba(255, 249, 241, 0.94), rgba(246, 232, 234, 0.9)),
-    radial-gradient(circle at 20% 10%, rgba(239, 98, 108, 0.1), transparent 32%);
+    linear-gradient(135deg, rgba(247, 255, 247, 0.96), rgba(226, 246, 247, 0.9)),
+    radial-gradient(circle at 20% 10%, rgba(226, 111, 88, 0.13), transparent 32%);
 }
 
 .soft-shadow {
-  box-shadow: 0 20px 60px rgba(37, 22, 5, 0.14);
+  box-shadow: 0 20px 60px rgba(16, 43, 28, 0.14);
 }

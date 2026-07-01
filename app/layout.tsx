@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ChronoGrowth",
+  title: "thingondesk",
   description:
     "Build a desk companion that shows time, progress, or growth and win desk prizes.",
 };

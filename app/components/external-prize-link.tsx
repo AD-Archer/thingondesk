@@ -29,7 +29,7 @@ export function ExternalPrizeLink({
       onClick={(event) => {
         event.preventDefault();
 
-        toast("You are leaving Thing on Desk(TOD).", {
+        toast("You are leaving thingondesk.", {
           description,
           action: {
             label: "Okay",
