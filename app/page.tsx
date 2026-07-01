@@ -17,6 +17,35 @@ const buildPrompts = [
   },
 ];
 
+const faqItems = [
+  {
+    question: "What is thingondesk?",
+    answer:
+      "thingondesk is a ysws for desk-sized projects that make progress visible while you work. Make something useful, weird, or beautiful, then show it off.",
+  },
+  {
+    question: "How do I submit?",
+    answer:
+      "Finish your project, collect a short demo or a few photos, and follow the submission instructions posted with the challenge. If you get stuck, ask in the community first so you can get pointed to the right place.",
+  },
+  {
+    question: "How do I join the community and ask questions?",
+    answer:
+      "Jump into the Hack Club Slack and use the links in the footer to get there. Share progress, ask questions, and post updates as you build.",
+  },
+  {
+    question: "What should I build?",
+    answer:
+      "Build anything that makes work feel more visible: a clock, tracker, timer, calendar, growing plant, snow falling onto a street, status display, or some other desk companion.",
+  },
+
+  {
+    question: "How do I track my hours?",
+    answer:
+      "If you decide to build a software project, you can use hackatime to track your hours. If you build a physical project, you can log your hours on Lapse and Lookout.",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-brand-light font-sans text-brand-dark">
@@ -172,6 +201,47 @@ export default function Home() {
 
         <section id="prizes" className="bg-brand-cream px-5 py-20 sm:px-8">
           <PrizeGrid />
+        </section>
+
+        <section
+          id="faq"
+          className="border-y border-black/10 bg-[linear-gradient(180deg,#102b1c_0%,#0b2015_100%)] px-5 py-20 text-brand-light sm:px-8"
+        >
+          <div className="mx-auto max-w-6xl">
+            <div className="max-w-3xl">
+              <p className="text-sm font-black uppercase tracking-[0.24em] text-[#ddd92a]">
+                FAQ
+              </p>
+              <h2 className="mt-3 text-4xl font-black leading-tight sm:text-5xl">
+                Quick answers before you start building.
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-brand-light/78 sm:text-lg">
+                If you want to ship something on your desk, these are the things
+                people usually ask first.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-5 lg:grid-cols-2">
+              {faqItems.map((item) => (
+                <details
+                  key={item.question}
+                  className="group rounded-2xl border border-brand-light/10 bg-white/6 p-5 shadow-[0_18px_40px_rgba(0,0,0,0.22)] transition duration-300 open:bg-white/8"
+                >
+                  <summary className="cursor-pointer list-none text-lg font-black leading-7 text-brand-light outline-none transition hover:text-[#ddd92a] group-open:text-[#ddd92a] [&::-webkit-details-marker]:hidden">
+                    {item.question}
+                  </summary>
+                  <p className="mt-3 max-w-2xl text-base leading-7 text-brand-light/78">
+                    {item.answer}
+                  </p>
+                </details>
+              ))}
+            </div>
+
+            <div className="mt-10 rounded-2xl border border-brand-light/10 bg-black/20 px-5 py-5 text-sm font-medium leading-7 text-brand-light/80">
+              Need a person? Head to the Hack Club Slack from the footer and ask
+              there. That is the fastest way to get an answer.
+            </div>
+          </div>
         </section>
       </main>
 
