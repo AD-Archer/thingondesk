@@ -82,15 +82,11 @@ export default function Home() {
         <main className="mx-auto grid w-full max-w-7xl items-center gap-12 py-16 md:grid-cols-12 md:py-24 my-auto">
           {/* Left Column: Copy & Actions */}
           <div className="flex flex-col items-start text-left md:col-span-7 z-10">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-black uppercase tracking-wider text-brand-gold backdrop-blur-md">
-              <span className="h-2 w-2 rounded-full bg-brand-red animate-pulse" />
-              ChronoGrowth YSWS
-            </div>
 
-            <h1 className="font-sans text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.1] lowercase">
-              work hard.<br />
+            <h1 className="font-sans text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.1]">
+              Work hard.<br />
               <span className="bg-gradient-to-r from-brand-red via-brand-gold to-brand-red bg-clip-text text-transparent">
-                win a tablet.
+                Win a tablet.
               </span>
             </h1>
 

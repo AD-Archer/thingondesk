@@ -72,6 +72,48 @@ const prizes = [
     href: "https://www.amazon.com/Like-New-Amazon-display-10-hour-battery/dp/B099GYVGW4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Xqi1fAXbYVaVQDpectnL0hX8ExQITrTc4o_ItrC3uqUOqauZDQnOCTFTcB1c_Bw60SjjevSTJzZQYtpur7LHuq89ku07y2yqQJwfoSRbJXxbyn9_MsRXX_vWzKgzINLUMUPdtx-Rf4fTVWtGq32wwr31IohSg9jyYZZG1vw9Fvdyxjyf20Fyw_Xt7PeXeDefDs5GT7eg_OF03kQIwpetmaPhfFRXn0pQ-eKVgYZPw_XqMEBdAwLOjVQUorm3oqiwY91NejTRkg4rJH_lMbmMzLry2KWqpGp1K6eMZoOaVoo.BhrGFE6kBj5HND71FjvE61QH68F6HLZACFdjMJqtPtE&dib_tag=se&keywords=amazon+fire+5&qid=1782846063&s=amazon-devices&sr=1-1&ufe=app_do%3Aamzn1.fos.ed73e2ba-4d06-4781-aee7-c317fe036206",
     image: "https://m.media-amazon.com/images/I/61pZPRMTAdL._AC_SL1000_.jpg",
   },
+  {
+    name: "Carlisle 13 oz Candy Bowl",
+    price: 5.15,
+    href: "https://www.amazon.com/Carlisle-453307-Plastic-Dessert-Bowls/dp/B004OA0YL2/ref=sr_1_8?crid=CARS0SY7H7T6&dib=eyJ2IjoiMSJ9.Fj4x-2fLzzbo0KQiC7He0scRTIicz88WZG2kj09ytcg8VO_DvfV2kVLDAJ6fx3555ayQuqGSAj6fkVAOW7KhSiqTaXgFOwgStEg_sWgfqC_TssHVylxz23nJWvdBLVincre9qbMrCKsXQor6IQtb1L29IUmJmFGZGOvDfz2IQf2yC-GsS-BljNITMsj-QjURY-slxz96EEXr0o6nR0E-XIlPTuX9rvfVUuSmfmZA2kDDFcjUPmOAF2fbQeInuB0fl4baejOFxbfdEfISj4iS8W4KtDEpnXtqRHENzEf3vqw.abS9wzh6a1pW_AyqnVKgu2NU2K6FEjATfiWjhijCmNo&dib_tag=se&keywords=candy%2Bbowl&qid=1782936068&sprefix=candy%2Bbow%2Caps%2C202&sr=8-8&th=1",
+    image: "https://m.media-amazon.com/images/I/71PTatPe2YL._AC_SL1500_.jpg",
+  },
+  {
+    name: "Hen Glass Candy Dish",
+    price: 17,
+    href: "https://www.amazon.com/Vintage-Hen-Shaped-Decorative-Multi-Functional-Tabletop/dp/B0GYNW2JD8/ref=sr_1_9?crid=CARS0SY7H7T6&dib=eyJ2IjoiMSJ9.Fj4x-2fLzzbo0KQiC7He0scRTIicz88WZG2kj09ytcg8VO_DvfV2kVLDAJ6fx3555ayQuqGSAj6fkVAOW7KhSiqTaXgFOwgStEg_sWgfqC_TssHVylxz23nJWvdBLVincre9qbMrCKsXQor6IQtb1L29IUmJmFGZGOvDfz2IQf2yC-GsS-BljNITMsj-QjURY-slxz96EEXr0o6nR0E-XIlPTuX9rvfVUuSmfmZA2kDDFcjUPmOAF2fbQeInuB0fl4baejOFxbfdEfISj4iS8W4KtDEpnXtqRHENzEf3vqw.abS9wzh6a1pW_AyqnVKgu2NU2K6FEjATfiWjhijCmNo&dib_tag=se&keywords=candy%2Bbowl&qid=1782936068&sprefix=candy%2Bbow%2Caps%2C202&sr=8-9&th=1",
+    image: "https://m.media-amazon.com/images/I/717xrHFm-FL._AC_SL1500_.jpg",
+  },
+  {
+    name: "WAIT FLY Heart-shaped Bowls",
+    price: 11,
+    href: "https://www.amazon.com/WAIT-FLY-Heart-shaped-Dessert-Household/dp/B079MCNYKF/ref=sr_1_10?crid=CARS0SY7H7T6&dib=eyJ2IjoiMSJ9.Fj4x-2fLzzbo0KQiC7He0scRTIicz88WZG2kj09ytcg8VO_DvfV2kVLDAJ6fx3555ayQuqGSAj6fkVAOW7KhSiqTaXgFOwgStEg_sWgfqC_TssHVylxz23nJWvdBLVincre9qbMrCKsXQor6IQtb1L29IUmJmFGZGOvDfz2IQf2yC-GsS-BljNITMsj-QjURY-slxz96EEXr0o6nR0E-XIlPTuX9rvfVUuSmfmZA2kDDFcjUPmOAF2fbQeInuB0fl4baejOFxbfdEfISj4iS8W4KtDEpnXtqRHENzEf3vqw.abS9wzh6a1pW_AyqnVKgu2NU2K6FEjATfiWjhijCmNo&dib_tag=se&keywords=candy%2Bbowl&qid=1782936068&sprefix=candy%2Bbow%2Caps%2C202&sr=8-10&th=1",
+    image: "https://m.media-amazon.com/images/I/51tkMPNepRL._AC_SL1500_.jpg",
+  },
+  {
+    name: "Vintage Gumball Machine",
+    price: 31,
+    href: "https://www.amazon.com/Northern-Popcorn-Company-Gumball-Machine/dp/B0055OY7XC/ref=sr_1_6?crid=2V0DVB1GG5TP&dib=eyJ2IjoiMSJ9.gr9_4LYGnOLZErcTWt6M8javWbh4YLP5fu7KNDFCiUSdWNme9powyHwKiIqkT5_trsen8inx6PwPbi1FUDKr-EZ3K76xcNpJZfkzmtfhltLKrrevBghEmghaNYjmWOqwmNlIY0qGy_3BSeKzjRNTn_C_vW0cadR3l1gEuB4wMZH6RBgjVWASyo0-qZXLmPosnKPXWT2oURiAEkQARP6Ew4nL4er5J53QLF13Fum8AVnxyocXFB678r9Iio1bchOk1sYctYdsVLWZw_qNa2Th_0smNvP2ykUocSJTXkFKO0g.JQ7QBOY_c4QexLLPmcVlUU7fQzXXwClBy8_kCWWLBVU&dib_tag=se&keywords=gumball%2Bmachine&qid=1782936334&sprefix=gumball%2Bmachin%2Caps%2C186&sr=8-6&th=1",
+    image: "https://m.media-amazon.com/images/I/91V-SV9J8WL._AC_SL1500_.jpg",
+  },
+  {
+    name: "2 lbs of candy",
+    price: 10,
+    href: "https://www.amazon.com/Ultimate-Assorted-Candy-Party-Mix/dp/B0BC2C83KM/ref=sr_1_9?crid=3OMI3AXXVC2Q0&dib=eyJ2IjoiMSJ9.9Gp9Ecq2UjcxDYz-wDUXO9sUVNYcsT44ONyk6BQ7c6GizXZmsojElvBIzlmQmNfyIX1CkJr5bnNx-yTU0_okQzzRctUrbLFKuCJCoNc2FM2gMO3JZa4VJ-F9xoK_SYE0kF3yPtFp37okC7NzgoYdRFsW0oQP6TD7ji7ICH6xHnYUhiFtd-X2l13z5n7e4_yAhOA2GT8McMF-s0GUoE2dyud7Q_Youbo_U-x9Mbd37XruKEzn7BwHXDjBQGSYyS3H5GEJMjcWDn5BinayYLVhD4XxBy3iEDPX3HD129IBGjw.7vP7BGKQsl0PCirvCBDlssdRlSIoiEK63n6i3AxfJ0k&dib_tag=se&keywords=candy&qid=1782936300&sprefix=candy%2Caps%2C216&sr=8-9&th=1",
+    image: "https://m.media-amazon.com/images/I/917I2L+NG0L._SL1500_.jpg",
+  },
+  {
+    name: "8 lbs of candy",
+    price: 44,
+    href: "https://www.amazon.com/Ultimate-Assorted-Candy-Party-Mix/dp/B0GMSKB378/ref=sr_1_9?crid=3OMI3AXXVC2Q0&dib=eyJ2IjoiMSJ9.9Gp9Ecq2UjcxDYz-wDUXO9sUVNYcsT44ONyk6BQ7c6GizXZmsojElvBIzlmQmNfyIX1CkJr5bnNx-yTU0_okQzzRctUrbLFKuCJCoNc2FM2gMO3JZa4VJ-F9xoK_SYE0kF3yPtFp37okC7NzgoYdRFsW0oQP6TD7ji7ICH6xHnYUhiFtd-X2l13z5n7e4_yAhOA2GT8McMF-s0GUoE2dyud7Q_Youbo_U-x9Mbd37XruKEzn7BwHXDjBQGSYyS3H5GEJMjcWDn5BinayYLVhD4XxBy3iEDPX3HD129IBGjw.7vP7BGKQsl0PCirvCBDlssdRlSIoiEK63n6i3AxfJ0k&dib_tag=se&keywords=candy&qid=1782936300&sprefix=candy%2Caps%2C216&sr=8-9&th=1",
+    image: "https://m.media-amazon.com/images/I/917I2L+NG0L._SL1500_.jpg",
+  },
+  {
+    name: "12 lbs of candy",
+    price: 71,
+    href: "https://www.amazon.com/Ultimate-Assorted-Candy-Party-Mix/dp/B0BPZRGW74/ref=sr_1_9?crid=3OMI3AXXVC2Q0&dib=eyJ2IjoiMSJ9.9Gp9Ecq2UjcxDYz-wDUXO9sUVNYcsT44ONyk6BQ7c6GizXZmsojElvBIzlmQmNfyIX1CkJr5bnNx-yTU0_okQzzRctUrbLFKuCJCoNc2FM2gMO3JZa4VJ-F9xoK_SYE0kF3yPtFp37okC7NzgoYdRFsW0oQP6TD7ji7ICH6xHnYUhiFtd-X2l13z5n7e4_yAhOA2GT8McMF-s0GUoE2dyud7Q_Youbo_U-x9Mbd37XruKEzn7BwHXDjBQGSYyS3H5GEJMjcWDn5BinayYLVhD4XxBy3iEDPX3HD129IBGjw.7vP7BGKQsl0PCirvCBDlssdRlSIoiEK63n6i3AxfJ0k&dib_tag=se&keywords=candy&qid=1782936300&sprefix=candy%2Caps%2C216&sr=8-9&th=1",
+    image: "https://m.media-amazon.com/images/I/917I2L+NG0L._SL1500_.jpg",
+  },
 ];
 
 export function PrizeGrid() {
