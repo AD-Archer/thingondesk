@@ -53,24 +53,351 @@ body {
 
 .bg-grid-pattern {
   background-size: 32px 32px;
-  background-image: linear-gradient(rgba(247, 255, 247, 0.06) 1px, transparent 1px),
+  background-image:
+    linear-gradient(rgba(247, 255, 247, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(247, 255, 247, 0.06) 1px, transparent 1px);
 }
 
 .bg-grid-light {
   background-size: 32px 32px;
-  background-image: linear-gradient(rgba(16, 43, 28, 0.06) 1px, transparent 1px),
+  background-image:
+    linear-gradient(rgba(16, 43, 28, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(16, 43, 28, 0.06) 1px, transparent 1px);
 }
 
 .paper-surface {
   background:
-    linear-gradient(135deg, rgba(247, 255, 247, 0.96), rgba(226, 246, 247, 0.9)),
-    radial-gradient(circle at 20% 10%, rgba(226, 111, 88, 0.13), transparent 32%);
+    linear-gradient(
+      135deg,
+      rgba(247, 255, 247, 0.96),
+      rgba(226, 246, 247, 0.9)
+    ),
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(226, 111, 88, 0.13),
+      transparent 32%
+    );
 }
 
 .soft-shadow {
   box-shadow: 0 20px 60px rgba(16, 43, 28, 0.14);
+}
+
+.section-kicker {
+  margin: 0;
+  color: #ef626c;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hackclub-section {
+  border-block: 1px solid rgba(16, 43, 28, 0.12);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(246, 232, 234, 0.94),
+      rgba(246, 232, 234, 0.78)
+    ),
+    #f6e8ea;
+  color: #251605;
+  padding: clamp(4.5rem, 8vw, 7rem) 1.25rem;
+}
+
+.hackclub-shell {
+  display: grid;
+  gap: 2.5rem;
+  margin: 0 auto;
+  width: min(100%, 72rem);
+}
+
+.hackclub-copy h2,
+.faq-heading h2 {
+  margin: 0.75rem 0 0;
+  max-width: 46rem;
+  font-size: clamp(2.35rem, 6vw, 4.8rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.hackclub-copy > p:not(.section-kicker),
+.faq-heading > p {
+  margin: 1.25rem 0 0;
+  max-width: 42rem;
+  color: rgba(37, 22, 5, 0.72);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.hackclub-stats {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 2.25rem;
+}
+
+.hackclub-stats div {
+  border: 1px solid rgba(37, 22, 5, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.52);
+  padding: 1rem;
+}
+
+.hackclub-stats span {
+  display: block;
+  font-size: 1.65rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.hackclub-stats p {
+  margin: 0.35rem 0 0;
+  color: rgba(37, 22, 5, 0.58);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hackclub-photo-board {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.hackclub-photo {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 10rem;
+  border: 1px solid rgba(37, 22, 5, 0.12);
+  border-radius: 8px;
+  background: #ddd92a;
+  box-shadow: 0 18px 42px rgba(37, 22, 5, 0.12);
+}
+
+.hackclub-photo-video {
+  aspect-ratio: 16 / 9;
+}
+
+.hackclub-photo-photo1 {
+  aspect-ratio: 512 / 317;
+  background: #ef626c;
+}
+
+.hackclub-photo-photo5 {
+  aspect-ratio: 512 / 318;
+  background: #102b1c;
+}
+
+.faq-section {
+  background:
+    radial-gradient(
+      circle at 14% 0%,
+      rgba(221, 217, 42, 0.12),
+      transparent 32rem
+    ),
+    linear-gradient(180deg, #415d43 0%, #251605 100%);
+  color: #f6e8ea;
+  padding: clamp(4.5rem, 8vw, 7rem) 1.25rem;
+}
+
+.faq-shell {
+  margin: 0 auto;
+  width: min(100%, 72rem);
+}
+
+.faq-heading {
+  max-width: 48rem;
+}
+
+.faq-heading .section-kicker,
+.faq-side-note .section-kicker {
+  color: #ddd92a;
+}
+
+.faq-heading > p {
+  color: rgba(246, 232, 234, 0.74);
+}
+
+.faq-layout {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq-item {
+  border: 1px solid rgba(246, 232, 234, 0.12);
+  border-radius: 8px;
+  background: rgba(246, 232, 234, 0.055);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.faq-item[open] {
+  border-color: rgba(221, 217, 42, 0.42);
+  background: rgba(246, 232, 234, 0.095);
+}
+
+.faq-item summary {
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.2rem 1.25rem;
+  font-size: 1.08rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-toggle {
+  display: grid;
+  flex: 0 0 auto;
+  width: 1.85rem;
+  height: 1.85rem;
+  place-items: center;
+  border-radius: 8px;
+  background: #ddd92a;
+  color: #251605;
+  font-size: 1.35rem;
+  line-height: 1;
+  transition: rotate 180ms ease;
+}
+
+.faq-item[open] .faq-toggle {
+  rotate: 45deg;
+}
+
+.faq-answer {
+  padding: 0 1.25rem 1.3rem;
+  color: rgba(246, 232, 234, 0.78);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.faq-side-note {
+  border: 1px solid rgba(246, 232, 234, 0.16);
+  border-radius: 8px;
+  background: #f6e8ea;
+  color: #251605;
+  padding: 1.4rem;
+  box-shadow: 0 20px 52px rgba(0, 0, 0, 0.2);
+}
+
+.faq-side-note h3 {
+  margin: 0.8rem 0 0;
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.faq-side-note ul {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.faq-side-note li {
+  display: flex;
+  gap: 0.65rem;
+  color: rgba(37, 22, 5, 0.74);
+  font-size: 0.96rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.faq-side-note li::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 0.45rem;
+  border-radius: 999px;
+  background: #ef626c;
+}
+
+.faq-divider {
+  height: 1px;
+  margin: 1.4rem 0;
+  background: rgba(37, 22, 5, 0.12);
+}
+
+.faq-help {
+  margin: 1.4rem 0 0;
+  border-radius: 8px;
+  background: rgba(65, 93, 67, 0.12);
+  padding: 1rem;
+  color: rgba(37, 22, 5, 0.74);
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1.55;
+}
+
+@media (hover: hover) {
+  .faq-item:hover {
+    border-color: rgba(221, 217, 42, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+@media (min-width: 640px) {
+  .hackclub-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hackclub-photo-board {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "video video"
+      "photo1 photo5";
+  }
+
+  .hackclub-photo-video {
+    grid-area: video;
+  }
+
+  .hackclub-photo-photo1 {
+    grid-area: photo1;
+  }
+
+  .hackclub-photo-photo5 {
+    grid-area: photo5;
+  }
+}
+
+@media (min-width: 900px) {
+  .hackclub-shell {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    align-items: center;
+  }
+
+  .faq-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 22rem);
+    align-items: start;
+  }
+
+  .faq-side-note {
+    position: sticky;
+    top: 1.5rem;
+  }
 }
 
 .site-footer {

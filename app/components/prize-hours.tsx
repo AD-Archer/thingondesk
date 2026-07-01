@@ -1,7 +1,7 @@
 const SALES_TAX_RATE = 0.08875;
 const DOLLARS_PER_HOUR = 5;
 
-function getPrizeHours(price: number) {
+export function getPrizeHours(price: number) {
   return Math.ceil((price + price * SALES_TAX_RATE) / DOLLARS_PER_HOUR);
 }
 

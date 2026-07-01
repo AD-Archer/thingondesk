@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 import { ExternalPrizeLink } from "./components/external-prize-link";
 import { PrizeGrid } from "./components/prize-grid";
 
@@ -9,41 +10,94 @@ const buildPrompts = [
   },
   {
     title: "Show growth",
-    copy: "A plant, river, skyline, creature, garden, or world that changes as work stacks up.",
+    copy: "A plant, river, skyline, creature, garden, or anything that changes as work stacks up or is completed.",
   },
   {
-    title: "Keep it desk-ready",
-    copy: "Make something you would actually leave open beside your keyboard while you build.",
+    title: "Keep it desk ready",
+    copy: "Make something you would actually leave open beside on your desk.",
   },
 ];
 
-const faqItems = [
+const faqItems: Array<{ question: string; answer: ReactNode }> = [
   {
     question: "What is thingondesk?",
-    answer:
-      "thingondesk is a ysws for desk-sized projects that make progress visible while you work. Make something useful, weird, or beautiful, then show it off.",
+    answer: (
+      <>
+        thingondesk is a Hack Club ysws for desk-sized projects that make
+        progress visible while you work. Make something useful, weird, or
+        beautiful, then show it off.
+      </>
+    ),
   },
   {
     question: "How do I submit?",
-    answer:
-      "Finish your project, collect a short demo or a few photos, and follow the submission instructions posted with the challenge. If you get stuck, ask in the community first so you can get pointed to the right place.",
+    answer: (
+      <>
+        Finish your project, collect a short demo or a few photos, and follow
+        the submission instructions posted with the challenge. If you get stuck,
+        ask in the community first so you can get pointed to the right place.
+      </>
+    ),
   },
   {
     question: "How do I join the community and ask questions?",
-    answer:
-      "Jump into the Hack Club Slack and use the links in the footer to get there. Share progress, ask questions, and post updates as you build.",
+    answer: (
+      <>
+        Jump into the Hack Club Slack and use the links in the footer to get
+        there. Share progress, ask questions, and post updates as you build.
+      </>
+    ),
   },
   {
     question: "What should I build?",
-    answer:
-      "Build anything that makes work feel more visible: a clock, tracker, timer, calendar, growing plant, snow falling onto a street, status display, or some other desk companion.",
+    answer: (
+      <>
+        Build anything that makes work feel more visible: a clock, tracker,
+        timer, calendar, growing plant, snow falling onto a street, status
+        display, or some other desk companion.
+      </>
+    ),
   },
 
   {
     question: "How do I track my hours?",
-    answer:
-      "If you decide to build a software project, you can use hackatime to track your hours. If you build a physical project, you can log your hours on Lapse and Lookout.",
+    answer: (
+      <>
+        If you are building software, use{" "}
+        <ExternalPrizeLink
+          href="https://hackatime.hackclub.com/"
+          className="font-black text-[#ddd92a] underline decoration-[#ddd92a]/70 decoration-2 underline-offset-4 transition hover:text-white"
+          description="Click Okay to open Hackatime in a new tab."
+        >
+          Hackatime
+        </ExternalPrizeLink>{" "}
+        to track your hours. For hardware projects, use{" "}
+        <ExternalPrizeLink
+          href="https://docs.hackclub.com/handbook/public-infrastructure/hackatime-lapse-and-lookout"
+          className="font-black text-[#ddd92a] underline decoration-[#ddd92a]/70 decoration-2 underline-offset-4 transition hover:text-white"
+          description="Click Okay to open the Hackatime, Lapse, and Lookout docs in a new tab."
+        >
+          Lapse and Lookout docs
+        </ExternalPrizeLink>{" "}
+        for recording timelapses and validating work.
+      </>
+    ),
   },
+];
+
+const eligibleItems = [
+  "You are between 13 and 18 years old.",
+  "You want to join Hack Club or take part in a Hack Club ysws.",
+  "You can spend time building something nice and share progress along the way.",
+  "Everything is free.",
+];
+
+const qualifyingItems = [
+  "Open source forever.",
+  "Functional as described in your project description.",
+  "Includes a README.md.",
+  "Accessible to any user without prior experience or setup.",
+  "Time is recorded faithfully through Hackatime for software or Lapse and Lookout for hardware.",
 ];
 
 export default function Home() {
@@ -203,43 +257,114 @@ export default function Home() {
           <PrizeGrid />
         </section>
 
-        <section
-          id="faq"
-          className="border-y border-black/10 bg-[linear-gradient(180deg,#102b1c_0%,#0b2015_100%)] px-5 py-20 text-brand-light sm:px-8"
-        >
-          <div className="mx-auto max-w-6xl">
-            <div className="max-w-3xl">
-              <p className="text-sm font-black uppercase tracking-[0.24em] text-[#ddd92a]">
-                FAQ
+        <section id="hack-club" className="hackclub-section">
+          <div className="hackclub-shell">
+            <div className="hackclub-copy">
+              <h2>What is Hack Club?</h2>
+              <p>
+                Hack Club runs online and in-person programs where teens build
+                ambitious, weird, useful things together. Everything is free,
+                ran by teens for teens, and built around shipping real projects to win prizes.
               </p>
-              <h2 className="mt-3 text-4xl font-black leading-tight sm:text-5xl">
-                Quick answers before you start building.
+
+              <div className="hackclub-stats" aria-label="Hack Club facts">
+                <div>
+                  <span>100k+</span>
+                  <p>makers</p>
+                </div>
+                <div>
+                  <span>13-18</span>
+                  <p>years old</p>
+                </div>
+                <div>
+                  <span>Cost?</span>
+                  <p>$0 completely free to join</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="hackclub-photo-board" aria-hidden="true">
+              <div className="hackclub-photo hackclub-photo-video">
+                <iframe
+                  className="absolute inset-0 h-full w-full border-0"
+                  src="https://www.youtube-nocookie.com/embed/kaEFv7e49mo?loop=1&playlist=kaEFv7e49mo&controls=0&playsinline=1&modestbranding=1&rel=0"
+                  title="Hack Club video"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                />
+              </div>
+              <div className="hackclub-photo hackclub-photo-photo1">
+                <Image
+                  src="/images/hero_photo1.webp"
+                  alt=""
+                  fill
+                  sizes="(min-width: 640px) 22rem, 100vw"
+                  className="object-contain p-4"
+                />
+              </div>
+              <div className="hackclub-photo hackclub-photo-photo5">
+                <Image
+                  src="/images/hero_photo5.webp"
+                  alt=""
+                  fill
+                  sizes="(min-width: 640px) 22rem, 100vw"
+                  className="object-contain p-4"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" className="faq-section">
+          <div className="faq-shell">
+            <div className="faq-heading">
+              <p className="section-kicker">FAQ</p>
+              <h2>
+                Got Questions? <br />I got answers.
               </h2>
-              <p className="mt-4 max-w-2xl text-base leading-7 text-brand-light/78 sm:text-lg">
-                If you want to ship something on your desk, these are the things
-                people usually ask first.
+              <p>
+                Short answers first. The important details about tracking and
+                prize hours live here, after you already know what you want to
+                build.
               </p>
             </div>
 
-            <div className="mt-10 grid gap-5 lg:grid-cols-2">
-              {faqItems.map((item) => (
-                <details
-                  key={item.question}
-                  className="group rounded-2xl border border-brand-light/10 bg-white/6 p-5 shadow-[0_18px_40px_rgba(0,0,0,0.22)] transition duration-300 open:bg-white/8"
-                >
-                  <summary className="cursor-pointer list-none text-lg font-black leading-7 text-brand-light outline-none transition hover:text-[#ddd92a] group-open:text-[#ddd92a] [&::-webkit-details-marker]:hidden">
-                    {item.question}
-                  </summary>
-                  <p className="mt-3 max-w-2xl text-base leading-7 text-brand-light/78">
-                    {item.answer}
-                  </p>
-                </details>
-              ))}
-            </div>
+            <div className="faq-layout">
+              <div className="faq-list">
+                {faqItems.map((item) => (
+                  <details key={item.question} className="faq-item">
+                    <summary>
+                      <span>{item.question}</span>
+                      <span className="faq-toggle" aria-hidden="true">
+                        +
+                      </span>
+                    </summary>
+                    <div className="faq-answer">{item.answer}</div>
+                  </details>
+                ))}
+              </div>
 
-            <div className="mt-10 rounded-2xl border border-brand-light/10 bg-black/20 px-5 py-5 text-sm font-medium leading-7 text-brand-light/80">
-              Need a person? Head to the Hack Club Slack from the footer and ask
-              there. That is the fastest way to get an answer.
+              <aside className="faq-side-note">
+                <p className="section-kicker">Before you submit</p>
+                <h3>Keep it simple and honest.</h3>
+                <ul>
+                  {eligibleItems.slice(0, 3).map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                <div className="faq-divider" />
+                <h3>What counts?</h3>
+                <ul>
+                  {qualifyingItems.slice(0, 4).map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                <p className="faq-help">
+                  Need a person? Head to the Hack Club Slack from the footer and
+                  ask there.
+                </p>
+              </aside>
             </div>
           </div>
         </section>
@@ -257,7 +382,7 @@ export default function Home() {
           </p>
           <div className="footer-links">
             <a
-              href="https://hackclub.com/slack"
+              href="https://hackclub.enterprise.slack.com/archives/C0BEDRYH6AX"
               target="_blank"
               rel="noreferrer"
             >
@@ -298,7 +423,7 @@ export default function Home() {
           </a>{" "}
           for{" "}
           <a
-            href="https://slack.hackclub.com"
+            href="https://hackclub.enterprise.slack.com/archives/C0BEDRYH6AX"
             target="_blank"
             rel="noopener noreferrer"
           >
