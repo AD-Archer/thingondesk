@@ -64,18 +64,20 @@ export default function Home() {
           </ExternalPrizeLink>
         </header>
 
-        <main className="mx-auto my-auto flex w-full max-w-7xl items-center py-24 md:py-28">
-          <div className="z-10 flex max-w-4xl flex-col items-start text-left">
-            <p className="mb-5 inline-flex rounded-md border border-brand-light/25 bg-brand-dark/28 px-3 py-2 text-xs font-black uppercase tracking-wide text-brand-sky shadow-[0_12px_28px_rgba(0,0,0,0.16)] backdrop-blur-md">
-              thingondesk
-            </p>
+        <main className="mx-auto my-auto grid w-full max-w-7xl items-center gap-10 py-20 md:grid-cols-12 md:py-24">
+          <div className="z-10 flex flex-col items-start text-left md:col-span-8">
 
-            <h1 className="max-w-4xl text-5xl font-black leading-[1.02] text-brand-light drop-shadow-[0_5px_22px_rgba(0,0,0,0.5)] sm:text-6xl lg:text-7xl 2xl:text-8xl">
-              Build a thing on your desk. <br />Win an iPad.
+            <h1 className="max-w-5xl text-4xl font-black leading-[0.95] text-brand-light drop-shadow-[0_5px_24px_rgba(0,0,0,0.56)] sm:text-7xl lg:text-8xl 2xl:text-9xl">
+              thingondesk
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg font-semibold leading-8 text-brand-light/90 drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]">
-              Make a clock, tracker, timer, calendar, a tree growing, river, or any small tool that helps show progress. Ship something real, then trade hours for something for your desk.
+            <p className="mt-5 max-w-3xl text-3xl font-black leading-tight text-brand-light drop-shadow-[0_4px_18px_rgba(0,0,0,0.5)] sm:text-4xl lg:text-5xl">
+              Build a desk thing. Win an Tablet.
+            </p>
+
+            <p className="mt-5 max-w-2xl text-lg font-semibold leading-8 text-brand-light/90 drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]">
+              Make a clock, tracker, timer, calendar, growing tree, river, or
+              any small tool that makes progress visible while you work.
             </p>
 
             <div className="mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
@@ -91,6 +93,85 @@ export default function Home() {
               >
                 What to build
               </a>
+            </div>
+          </div>
+
+          <div className="z-10 hidden justify-center md:col-span-4 md:flex">
+            <div
+              className="relative aspect-[4/3] w-full max-w-[28rem] rotate-2 rounded-3xl border border-white/12 bg-[#050505] p-8 text-brand-light shadow-[0_26px_70px_rgba(0,0,0,0.42)]"
+              aria-label="iPad showing a thingondesk progress display"
+              role="img"
+            >
+              <div className="absolute -bottom-7 left-1/2 h-5 w-56 -translate-x-1/2 rounded-full bg-black/24 blur-md" />
+              <div className="flex h-full flex-col justify-between">
+                <div>
+                  <div className="text-sm font-black uppercase tracking-[0.22em] text-[#ddd92a]">
+                    thingondesk
+                  </div>
+                  <div className="mt-3 h-px w-full bg-white/10" />
+                </div>
+
+                <div>
+                  <div className="text-xs font-black uppercase tracking-[0.2em] text-brand-light/55">
+                    hours needed
+                  </div>
+                  <div className="mt-5 flex items-end gap-2">
+                    <span className="hour-counter text-8xl font-black leading-none text-brand-light" />
+                    <span className="pb-3 text-5xl font-black text-[#ef626c]">
+                      h
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between text-xs font-black uppercase tracking-[0.16em]">
+                    <span className="text-[#ddd92a]">iPad target</span>
+                    <span className="text-brand-light/55">78h</span>
+                  </div>
+                  <div className="mt-4 h-3 overflow-hidden rounded-full bg-white/12">
+                    <div className="h-full w-4/5 rounded-full bg-[#ef626c]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="z-10 mt-2 flex justify-center md:hidden">
+            <div
+              className="relative aspect-[4/3] w-full max-w-[21rem] rotate-1 rounded-3xl border border-white/12 bg-[#050505] p-6 text-brand-light shadow-[0_20px_54px_rgba(0,0,0,0.4)]"
+              aria-label="iPad showing a thingondesk progress display"
+              role="img"
+            >
+              <div className="flex h-full flex-col justify-between">
+                <div>
+                  <div className="text-xs font-black uppercase tracking-[0.18em] text-[#ddd92a]">
+                    thingondesk
+                  </div>
+                  <div className="mt-3 h-px w-full bg-white/10" />
+                </div>
+
+                <div>
+                  <div className="text-xs font-black uppercase tracking-[0.18em] text-brand-light/55">
+                    hours needed
+                  </div>
+                  <div className="mt-4 flex items-end gap-1.5">
+                    <span className="hour-counter text-6xl font-black leading-none text-brand-light" />
+                    <span className="pb-1.5 text-3xl font-black text-[#ef626c]">
+                      h
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between text-[0.65rem] font-black uppercase tracking-[0.14em]">
+                    <span className="text-[#ddd92a]">iPad target</span>
+                    <span className="text-brand-light/55">78h</span>
+                  </div>
+                  <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-white/12">
+                    <div className="h-full w-4/5 rounded-full bg-[#ef626c]" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>
@@ -141,11 +222,77 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-brand-dark/15 bg-brand-dark px-5 py-8 text-center text-sm font-semibold text-brand-light">
-        <span>
-          &copy; {new Date().getFullYear()} Hack Club made by kids for kids.
-        </span>{" "}
-        <span>thingondesk by Archer YSWS.</span>
+      <footer className="site-footer">
+        <div className="footer-content">
+          <p className="footer-brand">thingondesk</p>
+          <p className="footer-tagline">
+            A{" "}
+            <a href="https://hackclub.com" target="_blank" rel="noreferrer">
+              Hack Club
+            </a>{" "}
+            program
+          </p>
+          <div className="footer-links">
+            <a href="https://hackclub.com/slack" target="_blank" rel="noreferrer">
+              Slack
+            </a>
+            <a href="https://github.com/hackclub" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a
+              href="https://hackclub.com/privacy-and-terms/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Privacy
+            </a>
+          </div>
+        </div>
+        <p className="footer-love">
+          made with{" "}
+          <a
+            href="https://hackclub.com/philosophy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            &lt;3
+          </a>{" "}
+          by{" "}
+          <a
+            href="https://github.com/ad-archer"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            teens
+          </a>{" "}
+          for{" "}
+          <a
+            href="https://slack.hackclub.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            teens
+          </a>
+        </p>
+        <svg
+          className="footer-cog gear-cw"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <g fill="#7f796d">
+            <circle cx="50" cy="50" r="30" />
+            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(0 50 50)" />
+            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(45 50 50)" />
+            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(90 50 50)" />
+            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(135 50 50)" />
+            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(180 50 50)" />
+            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(225 50 50)" />
+            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(270 50 50)" />
+            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(315 50 50)" />
+          </g>
+          <circle cx="50" cy="50" r="12" fill="#000" />
+        </svg>
       </footer>
     </div>
   );
