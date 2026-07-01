@@ -73,33 +73,6 @@ body {
   box-shadow: 0 20px 60px rgba(16, 43, 28, 0.14);
 }
 
-@property --hours {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-
-.hour-counter {
-  animation: count-hours 2.8s ease-out infinite;
-  counter-reset: hours var(--hours);
-}
-
-.hour-counter::after {
-  content: counter(hours);
-}
-
-@keyframes count-hours {
-  0%,
-  18% {
-    --hours: 0;
-  }
-
-  72%,
-  100% {
-    --hours: 78;
-  }
-}
-
 .site-footer {
   position: relative;
   isolation: isolate;

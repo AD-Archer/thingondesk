@@ -66,13 +66,12 @@ export default function Home() {
 
         <main className="mx-auto my-auto grid w-full max-w-7xl items-center gap-10 py-20 md:grid-cols-12 md:py-24">
           <div className="z-10 flex flex-col items-start text-left md:col-span-8">
-
             <h1 className="max-w-5xl text-4xl font-black leading-[0.95] text-brand-light drop-shadow-[0_5px_24px_rgba(0,0,0,0.56)] sm:text-7xl lg:text-8xl 2xl:text-9xl">
               thingondesk
             </h1>
 
             <p className="mt-5 max-w-3xl text-3xl font-black leading-tight text-brand-light drop-shadow-[0_4px_18px_rgba(0,0,0,0.5)] sm:text-4xl lg:text-5xl">
-              Build a desk thing. Win an Tablet.
+              Build a desk thing. Win a tablet.
             </p>
 
             <p className="mt-5 max-w-2xl text-lg font-semibold leading-8 text-brand-light/90 drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]">
@@ -83,13 +82,13 @@ export default function Home() {
             <div className="mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
               <a
                 href="#prizes"
-                className="inline-flex items-center justify-center rounded-lg border border-white/25 bg-[#ef626c] px-7 py-4 text-sm font-black uppercase text-white shadow-[0_16px_34px_rgba(239,98,108,0.42)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#d94f5a]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#ef626c] px-7 py-4 text-sm font-black uppercase text-white shadow-[0_14px_26px_rgba(17,24,39,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#d94f5a]"
               >
                 See the prizes
               </a>
               <a
                 href="#brief"
-                className="inline-flex items-center justify-center rounded-lg border border-white/25 bg-[#ddd92a] px-7 py-4 text-sm font-black uppercase text-brand-dark shadow-[0_16px_34px_rgba(221,217,42,0.34)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f0ec38]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#ddd92a] px-7 py-4 text-sm font-black uppercase text-brand-dark shadow-[0_14px_26px_rgba(17,24,39,0.14)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f0ec38]"
               >
                 What to build
               </a>
@@ -98,77 +97,31 @@ export default function Home() {
 
           <div className="z-10 hidden justify-center md:col-span-4 md:flex">
             <div
-              className="relative aspect-[4/3] w-full max-w-[28rem] rotate-2 rounded-3xl border border-white/12 bg-[#050505] p-8 text-brand-light shadow-[0_26px_70px_rgba(0,0,0,0.42)]"
-              aria-label="iPad showing a thingondesk progress display"
+              className="relative aspect-square w-full max-w-[26rem] rotate-2 rounded-3xl border border-white/12 bg-[#050505] p-6 text-brand-light shadow-[0_26px_70px_rgba(0,0,0,0.42)]"
+              aria-label="Tablet prize shown inside a thingondesk display"
               role="img"
             >
               <div className="absolute -bottom-7 left-1/2 h-5 w-56 -translate-x-1/2 rounded-full bg-black/24 blur-md" />
               <div className="flex h-full flex-col justify-between">
                 <div>
-                  <div className="text-sm font-black uppercase tracking-[0.22em] text-[#ddd92a]">
+                  <div className="text-xs font-black uppercase tracking-[0.22em] text-[#ddd92a] sm:text-sm">
                     thingondesk
                   </div>
                   <div className="mt-3 h-px w-full bg-white/10" />
                 </div>
 
-                <div>
-                  <div className="text-xs font-black uppercase tracking-[0.2em] text-brand-light/55">
-                    hours needed
+                <div className="space-y-3">
+                  <div className="text-[0.7rem] font-black uppercase tracking-[0.2em] text-brand-light/55 sm:text-xs">
+                    featured reward
                   </div>
-                  <div className="mt-5 flex items-end gap-2">
-                    <span className="hour-counter text-8xl font-black leading-none text-brand-light" />
-                    <span className="pb-3 text-5xl font-black text-[#ef626c]">
-                      h
-                    </span>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-center justify-between text-xs font-black uppercase tracking-[0.16em]">
-                    <span className="text-[#ddd92a]">iPad target</span>
-                    <span className="text-brand-light/55">78h</span>
-                  </div>
-                  <div className="mt-4 h-3 overflow-hidden rounded-full bg-white/12">
-                    <div className="h-full w-4/5 rounded-full bg-[#ef626c]" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="z-10 mt-2 flex justify-center md:hidden">
-            <div
-              className="relative aspect-[4/3] w-full max-w-[21rem] rotate-1 rounded-3xl border border-white/12 bg-[#050505] p-6 text-brand-light shadow-[0_20px_54px_rgba(0,0,0,0.4)]"
-              aria-label="iPad showing a thingondesk progress display"
-              role="img"
-            >
-              <div className="flex h-full flex-col justify-between">
-                <div>
-                  <div className="text-xs font-black uppercase tracking-[0.18em] text-[#ddd92a]">
-                    thingondesk
-                  </div>
-                  <div className="mt-3 h-px w-full bg-white/10" />
-                </div>
-
-                <div>
-                  <div className="text-xs font-black uppercase tracking-[0.18em] text-brand-light/55">
-                    hours needed
-                  </div>
-                  <div className="mt-4 flex items-end gap-1.5">
-                    <span className="hour-counter text-6xl font-black leading-none text-brand-light" />
-                    <span className="pb-1.5 text-3xl font-black text-[#ef626c]">
-                      h
-                    </span>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-center justify-between text-[0.65rem] font-black uppercase tracking-[0.14em]">
-                    <span className="text-[#ddd92a]">iPad target</span>
-                    <span className="text-brand-light/55">78h</span>
-                  </div>
-                  <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-white/12">
-                    <div className="h-full w-4/5 rounded-full bg-[#ef626c]" />
+                  <div className="relative aspect-[5/4] overflow-hidden rounded-xl bg-white/95">
+                    <Image
+                      src="https://m.media-amazon.com/images/I/713r2sAaC+L._AC_SL1500_.jpg"
+                      alt="Tablet prize"
+                      fill
+                      sizes="(min-width: 768px) 320px, 280px"
+                      className="object-contain p-2"
+                    />
                   </div>
                 </div>
               </div>
@@ -233,10 +186,18 @@ export default function Home() {
             program
           </p>
           <div className="footer-links">
-            <a href="https://hackclub.com/slack" target="_blank" rel="noreferrer">
+            <a
+              href="https://hackclub.com/slack"
+              target="_blank"
+              rel="noreferrer"
+            >
               Slack
             </a>
-            <a href="https://github.com/hackclub" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/hackclub"
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub
             </a>
             <a
@@ -282,14 +243,70 @@ export default function Home() {
         >
           <g fill="#7f796d">
             <circle cx="50" cy="50" r="30" />
-            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(0 50 50)" />
-            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(45 50 50)" />
-            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(90 50 50)" />
-            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(135 50 50)" />
-            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(180 50 50)" />
-            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(225 50 50)" />
-            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(270 50 50)" />
-            <rect x="43" y="4" width="14" height="22" rx="3" transform="rotate(315 50 50)" />
+            <rect
+              x="43"
+              y="4"
+              width="14"
+              height="22"
+              rx="3"
+              transform="rotate(0 50 50)"
+            />
+            <rect
+              x="43"
+              y="4"
+              width="14"
+              height="22"
+              rx="3"
+              transform="rotate(45 50 50)"
+            />
+            <rect
+              x="43"
+              y="4"
+              width="14"
+              height="22"
+              rx="3"
+              transform="rotate(90 50 50)"
+            />
+            <rect
+              x="43"
+              y="4"
+              width="14"
+              height="22"
+              rx="3"
+              transform="rotate(135 50 50)"
+            />
+            <rect
+              x="43"
+              y="4"
+              width="14"
+              height="22"
+              rx="3"
+              transform="rotate(180 50 50)"
+            />
+            <rect
+              x="43"
+              y="4"
+              width="14"
+              height="22"
+              rx="3"
+              transform="rotate(225 50 50)"
+            />
+            <rect
+              x="43"
+              y="4"
+              width="14"
+              height="22"
+              rx="3"
+              transform="rotate(270 50 50)"
+            />
+            <rect
+              x="43"
+              y="4"
+              width="14"
+              height="22"
+              rx="3"
+              transform="rotate(315 50 50)"
+            />
           </g>
           <circle cx="50" cy="50" r="12" fill="#000" />
         </svg>

@@ -16,10 +16,11 @@ const prizes = [
     image: "https://m.media-amazon.com/images/I/713r2sAaC+L._AC_SL1500_.jpg",
   },
   {
-    name: "Apple iPad, 2025 Wi-Fi + Cellular, 128GB",
-    price: 355.99,
-    href: "https://www.amazon.com/Apple-11-inch-Wi-Fi-Cellular-128GB/dp/B0F636Z3NS/ref=sr_1_3?crid=F7ID0JVXXA0F&dib=eyJ2IjoiMSJ9.9ffvSXuh6USykgDxAC6OnZLW8oWab5aFRP1_wh7JTRPDY2Au0Pec9yP-6Y9oWd1dzxrtQgv9oNVg07QN8IwTk3Zor6ilIEwiMhD7Qab2chxAk7L5qsiup4xIR9EJwux4ij0u1S-q5kzYJIKs5anHisQIHIxNcRK53qf-GFoWFmcA2ham04eCgd1_ZRHNHZfUZ8hks9Lg_Vtvk260_zcgTLReyhlJMzBbgarWUfBpZAQ.LodnNSiFgfICSuz2QZhHOHlBhpVWSCq_Ofvhji5IfyI&dib_tag=se&keywords=ipad%2B2026&qid=1782842387&sprefix=ipad%2B202%2Caps%2C162&sr=8-3&th=1",
-    image: "https://m.media-amazon.com/images/I/51j9EvjBWGL._AC_SX679_.jpg",
+    name: "Lenovo Legion Tab Gen 3",
+    price: 419.99,
+    href: "https://www.lenovo.com/us/en/p/tablets/android-tablets/legion-tab-series/lenovo-legion-tab-gen-3/len103g0002",
+    image:
+      "https://p1-ofp.static.pub/ShareResource/na/subseries/hero/lenovo-legion-tab-gen-3-01.png?height=584&width=584",
   },
   {
     name: "Amazon Echo Show 5",
