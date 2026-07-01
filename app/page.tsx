@@ -22,7 +22,7 @@ export default function Home() {
     <div className="min-h-screen bg-brand-light font-sans text-brand-dark">
       <section className="relative isolate flex min-h-screen flex-col overflow-hidden bg-brand-dark px-5 py-5 text-brand-light sm:px-8 lg:px-12">
         <video
-          className="absolute inset-0 -z-30 h-full w-full scale-105 object-cover blur-[3px] saturate-125"
+          className="absolute inset-0 -z-30 h-full w-full scale-[1.02] object-cover blur-[0.5px] saturate-105"
           autoPlay
           muted
           loop
@@ -33,10 +33,10 @@ export default function Home() {
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(18,43,28,0.82)_0%,rgba(31,71,42,0.64)_42%,rgba(226,111,88,0.34)_100%)]" />
-        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_18%_25%,rgba(246,232,234,0.22),transparent_32%),linear-gradient(180deg,rgba(16,34,24,0.16),rgba(11,29,21,0.76)_78%,rgba(226,246,247,0.94))]" />
+        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_18%_25%,rgba(246,232,234,0.12),transparent_32%),linear-gradient(180deg,rgba(16,34,24,0.12),rgba(11,29,21,0.82)_78%,rgba(16,43,28,0.9))]" />
         <div className="absolute inset-x-0 top-0 -z-10 h-1.5 bg-[#b9f2f8]" />
         <div className="absolute inset-x-0 top-1.5 -z-10 h-1.5 bg-[#45c84b]" />
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-[linear-gradient(180deg,transparent,rgba(226,246,247,0.58))]" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-[linear-gradient(180deg,transparent,rgba(16,43,28,0.2))]" />
 
         <ExternalPrizeLink
           href="https://hackclub.com"
@@ -114,7 +114,7 @@ export default function Home() {
                   <div className="text-[0.7rem] font-black uppercase tracking-[0.2em] text-brand-light/55 sm:text-xs">
                     featured reward
                   </div>
-                  <div className="relative aspect-[5/4] overflow-hidden rounded-xl bg-white/95">
+                  <div className="relative aspect-[5/4] overflow-hidden rounded-xl bg-[#eee6d8]">
                     <Image
                       src="https://m.media-amazon.com/images/I/713r2sAaC+L._AC_SL1500_.jpg"
                       alt="Tablet prize"

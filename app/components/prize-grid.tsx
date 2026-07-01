@@ -144,7 +144,7 @@ export function PrizeGrid() {
               key={`${prize.name}-${prize.href}`}
               href={prize.href}
               description="Click Okay to open the prize link in a new tab."
-              className="group flex min-h-[23rem] flex-col rounded-lg border border-brand-dark/10 bg-white p-4 shadow-[0_18px_40px_rgba(37,22,5,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/40 hover:shadow-[0_22px_55px_rgba(65,93,67,0.16)]"
+              className="group flex min-h-[23rem] flex-col rounded-lg border border-brand-dark/10 bg-[#f3ead8] p-4 shadow-[0_18px_40px_rgba(37,22,5,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/40 hover:shadow-[0_22px_55px_rgba(65,93,67,0.16)]"
             >
               <div className="relative h-48 overflow-hidden rounded-md sm:h-52">
                 {prize.image ? (
