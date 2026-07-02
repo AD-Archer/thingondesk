@@ -22,8 +22,7 @@ const ideaItems = [
   {
     title: "Advent calendar",
     copy: "A physical countdown, daily reveal box, desk display, or tiny ritual that changes over time.",
-    image:
-      "https://m.media-amazon.com/images/I/71yrNn2fqoL.jpg",
+    image: "https://m.media-amazon.com/images/I/71yrNn2fqoL.jpg",
   },
   {
     title: "Smart dashboard",
@@ -103,7 +102,7 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
         If you are building software, use{" "}
         <ExternalPrizeLink
           href="https://hackatime.hackclub.com/"
-          className="font-black text-[#ddd92a] underline decoration-[#ddd92a]/70 decoration-2 underline-offset-4 transition hover:text-white"
+          className="font-black text-[#ef626c] underline decoration-[#ef626c]/70 decoration-2 underline-offset-4 transition hover:text-[#251605]"
           description="Click Okay to open Hackatime in a new tab."
         >
           Hackatime
@@ -111,7 +110,7 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
         to track your hours. For hardware projects, use{" "}
         <ExternalPrizeLink
           href="https://docs.hackclub.com/handbook/public-infrastructure/hackatime-lapse-and-lookout"
-          className="font-black text-[#ddd92a] underline decoration-[#ddd92a]/70 decoration-2 underline-offset-4 transition hover:text-white"
+          className="font-black text-[#ef626c] underline decoration-[#ef626c]/70 decoration-2 underline-offset-4 transition hover:text-[#251605]"
           description="Click Okay to open the Hackatime, Lapse, and Lookout docs in a new tab."
         >
           Lapse and Lookout docs
@@ -150,10 +149,10 @@ export default function Home() {
           aria-label="Hack Club"
         >
           <Image
-            src="/Hack%20Club%20Branding%202020/flag-standalone.png"
+            src="/branding/flag-orpheus-top.png"
             alt="Hack Club Logo"
-            width={526}
-            height={184}
+            width={700}
+            height={200}
             priority
             className="h-auto w-full object-contain drop-shadow-[0_10px_18px_rgba(0,0,0,0.24)]"
           />
@@ -273,19 +272,21 @@ export default function Home() {
 
         <section
           id="ideas"
-          className="bg-[#251605] px-5 py-20 text-[#f6e8ea] sm:px-8"
+          className="relative isolate overflow-hidden border-y border-[#251605]/15 bg-[#ded6c4] px-5 py-20 text-[#251605] sm:px-8"
         >
+          <div className="pointer-events-none absolute -left-14 top-10 -z-10 h-40 w-40 rounded-full border-[1.6rem] border-[#7f796d]/14" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-2 bg-[#ef626c]" />
           <div className="mx-auto max-w-6xl">
             <div className="mb-9 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#ddd92a]">
+                <p className="text-base font-black uppercase tracking-[0.16em] text-[#ef626c]">
                   Ideas
                 </p>
                 <h2 className="mt-3 max-w-2xl text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
                   It does not have to be just code.
                 </h2>
               </div>
-              <p className="max-w-xl text-base font-semibold leading-7 text-[#f6e8ea]/72 sm:text-lg">
+              <p className="max-w-xl text-lg font-semibold leading-8 text-[#251605]/72">
                 Software, hardware, physical devices, artwork, printed pieces,
                 and desk objects all count. The goal is a project that makes
                 time, progress, or work feel visible.
@@ -296,22 +297,22 @@ export default function Home() {
               {ideaItems.map((idea) => (
                 <article
                   key={idea.title}
-                  className="group overflow-hidden rounded-lg border border-[#f6e8ea]/12 bg-[#f6e8ea]/8 shadow-[0_18px_46px_rgba(0,0,0,0.2)] transition duration-300 hover:-translate-y-1 hover:border-[#ddd92a]/45"
+                  className="group overflow-hidden rounded-lg border border-[#251605]/12 bg-[#f6e8ea]/72 shadow-[0_18px_42px_rgba(37,22,5,0.1)] transition duration-300 hover:border-[#ef626c]/45"
                 >
-                  <div className="relative aspect-[4/3] bg-[#ded6c4]">
+                  <div className="relative aspect-[4/3] border-b border-[#251605]/10 bg-[#f3ead8]">
                     <Image
                       src={idea.image}
                       alt=""
                       fill
                       sizes="(min-width: 1024px) 280px, (min-width: 640px) 50vw, 100vw"
-                      className="object-contain p-3 transition duration-300 group-hover:scale-[1.03]"
+                      className="object-contain p-3"
                     />
                   </div>
                   <div className="p-5">
                     <h3 className="text-xl font-black leading-tight">
                       {idea.title}
                     </h3>
-                    <p className="mt-3 text-sm font-medium leading-6 text-[#f6e8ea]/70">
+                    <p className="mt-3 text-base font-medium leading-7 text-[#251605]/70">
                       {idea.copy}
                     </p>
                   </div>
@@ -326,51 +327,61 @@ export default function Home() {
         </section>
 
         <section
-          id="hack-club"
-          className="relative isolate overflow-hidden border-y border-[#251605]/15 bg-[#ded6c4] px-5 py-20 text-[#251605] sm:px-8 lg:py-28"
+          id="faq"
+          className="relative isolate overflow-hidden border-y border-[#251605]/15 bg-[#ded6c4] px-5 py-20 text-[#251605] sm:px-8 lg:py-24"
         >
           <div className="pointer-events-none absolute -right-16 bottom-[-4rem] -z-10 h-56 w-56 rounded-full border-[2rem] border-[#7f796d]/18" />
           <div className="pointer-events-none absolute left-0 top-0 -z-10 h-2 w-full bg-[#ef626c]" />
-          <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-            <div className="lg:sticky lg:top-8">
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-[#ef626c]">
-                What is thingondesk?
-              </p>
-              <h2 className="mt-3 max-w-2xl text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
-                Make something for your desk. Get something for your desk.
-              </h2>
-              <p className="mt-5 max-w-2xl text-base font-bold leading-7 text-[#251605]/72 sm:text-lg">
-                Build a small project that sits on or beside your desk and
-                makes time, progress, or growth visible while you work. It can
-                be useful, strange, pretty, hardware, software, or both.
-              </p>
-              <a
-                href="#faq"
-                className="mt-7 inline-flex rounded-lg bg-[#ef626c] px-5 py-3 text-sm font-black uppercase text-white shadow-[0_14px_26px_rgba(37,22,5,0.14)] transition hover:-translate-y-0.5 hover:bg-[#d94f5a]"
-              >
-                Read the FAQ
-              </a>
+          <div className="mx-auto w-full max-w-6xl">
+            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+              <div>
+                <p className="text-base font-black uppercase tracking-[0.16em] text-[#ef626c]">
+                  FAQ
+                </p>
+                <h2 className="mt-3 max-w-2xl text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
+                  Start here if you are wondering what counts.
+                </h2>
+              </div>
+              <div className="grid gap-3 sm:grid-cols-3">
+                {[
+                  [
+                    "Build",
+                    "Make something desk-sized that shows time, progress, growth, or work.",
+                  ],
+                  ["Track", "Record your build hours honestly while you work."],
+                  [
+                    "Submit",
+                    "Share the finished project, docs, and proof of work.",
+                  ],
+                ].map(([title, copy]) => (
+                  <div
+                    key={title}
+                    className="rounded-lg border border-[#251605]/12 bg-[#f6e8ea]/70 p-4 shadow-[0_14px_32px_rgba(37,22,5,0.08)]"
+                  >
+                    <p className="text-lg font-black leading-tight text-[#ef626c]">
+                      {title}
+                    </p>
+                    <p className="mt-2 text-base font-semibold leading-7 text-[#251605]/70">
+                      {copy}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div id="faq" className="grid gap-3">
+            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {faqItems.map((item) => (
-                <details
+                <article
                   key={item.question}
-                  className="group rounded-lg border border-[#251605]/12 bg-[#f6e8ea]/72 shadow-[0_14px_32px_rgba(37,22,5,0.1)] transition hover:-translate-y-0.5 hover:border-[#ef626c]/45 open:border-[#ef626c]/55 open:bg-[#f6e8ea]"
+                  className="rounded-lg border border-[#251605]/12 bg-[#f6e8ea]/72 p-5 shadow-[0_14px_32px_rgba(37,22,5,0.1)] transition hover:border-[#ef626c]/45 hover:bg-[#f6e8ea]"
                 >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-5 text-base font-black leading-tight marker:hidden [&::-webkit-details-marker]:hidden">
-                    <span>{item.question}</span>
-                    <span
-                      className="grid h-8 w-8 flex-none place-items-center rounded-lg bg-[#ddd92a] text-2xl leading-none text-[#251605] transition group-open:rotate-45"
-                      aria-hidden="true"
-                    >
-                      +
-                    </span>
-                  </summary>
-                  <div className="px-5 pb-5 text-base font-medium leading-7 text-[#251605]/72">
+                  <h3 className="text-xl font-black leading-tight">
+                    {item.question}
+                  </h3>
+                  <div className="mt-3 text-base font-medium leading-7 text-[#251605]/72">
                     {item.answer}
                   </div>
-                </details>
+                </article>
               ))}
             </div>
           </div>
