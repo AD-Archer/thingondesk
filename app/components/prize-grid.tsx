@@ -54,12 +54,12 @@ const prizes = [
     href: "https://a.co/d/0cXK2qkK",
     image: "https://m.media-amazon.com/images/I/51pdzvGQLFL._AC_SL1500_.jpg",
   },
-  {
-    name: "FEZIBO Standing Desk, 48 x 24 Inches",
-    price: 94.99,
-    href: "https://www.amazon.com/FEZIBO-Standing-Electric-Adjustable-Computer/dp/B0F8MHPVPH/ref=sr_1_2?crid=TYDTVH3UAL5I&dib=eyJ2IjoiMSJ9.jKr2pidEqRjl_2EB2Coaw5TO3NceW-Rhk4DHrj03mH-nw58f1bSnuLeuUg-sU83_nuSHidFKrzRFef5iUZUFj0mhdhpLgax8Aq08Jb4ObE1hQrd61k88JpRan_Bvl7cZAD6coYgKu2lbfshjzio3xxCC0B7HF911gooYUGn5MPfmwEEO7NGocOhIfoUThik95uEz29PyOtfxxBwDfUfYAws4zoSDmltPIQ9aEFIyccK2MPhn0gAc6tSi7bHi_H4gVdY1ctHoTHv8JbyOk0MRlVGSkxuN_YUPQBHj6nfk6dQ.JUy7LHWmrPQSxzWEBgxP8S2qKrGlF9w7hklRu0QBfLY&dib_tag=se&keywords=moving%2Bdesk&qid=1782842481&s=amazon-devices&sprefix=moving%2Bdes%2Camazon-devices%2C149&sr=1-2&th=1",
-    image: "https://m.media-amazon.com/images/I/71smFjr2QgL._AC_SL1500_.jpg",
-  },
+  // {
+  //   name: "FEZIBO Standing Desk, 48 x 24 Inches",
+  //   price: 94.99,
+  //   href: "https://www.amazon.com/FEZIBO-Standing-Electric-Adjustable-Computer/dp/B0F8MHPVPH/ref=sr_1_2?crid=TYDTVH3UAL5I&dib=eyJ2IjoiMSJ9.jKr2pidEqRjl_2EB2Coaw5TO3NceW-Rhk4DHrj03mH-nw58f1bSnuLeuUg-sU83_nuSHidFKrzRFef5iUZUFj0mhdhpLgax8Aq08Jb4ObE1hQrd61k88JpRan_Bvl7cZAD6coYgKu2lbfshjzio3xxCC0B7HF911gooYUGn5MPfmwEEO7NGocOhIfoUThik95uEz29PyOtfxxBwDfUfYAws4zoSDmltPIQ9aEFIyccK2MPhn0gAc6tSi7bHi_H4gVdY1ctHoTHv8JbyOk0MRlVGSkxuN_YUPQBHj6nfk6dQ.JUy7LHWmrPQSxzWEBgxP8S2qKrGlF9w7hklRu0QBfLY&dib_tag=se&keywords=moving%2Bdesk&qid=1782842481&s=amazon-devices&sprefix=moving%2Bdes%2Camazon-devices%2C149&sr=1-2&th=1",
+  //   image: "https://m.media-amazon.com/images/I/71smFjr2QgL._AC_SL1500_.jpg",
+  // },
   {
     name: "Nintendo Sound Clock: Alarmo",
     price: 97.49,
@@ -164,8 +164,11 @@ const hourFilters = [
   { label: "16+", value: 16 },
 ];
 
+const mobilePrizeLimit = 6;
+
 export function PrizeGrid() {
   const [maxHours, setMaxHours] = useState<number>(Infinity);
+  const [showAllMobilePrizes, setShowAllMobilePrizes] = useState(false);
 
   const filteredPrizes = useMemo(() => {
     return prizes.filter((prize) => {
@@ -182,6 +185,16 @@ export function PrizeGrid() {
       return hours <= maxHours;
     });
   }, [maxHours]);
+
+  const hasMoreMobilePrizes = filteredPrizes.length > mobilePrizeLimit;
+  const visibleMobilePrizeCount = showAllMobilePrizes
+    ? filteredPrizes.length
+    : Math.min(filteredPrizes.length, mobilePrizeLimit);
+
+  function selectHourFilter(value: number) {
+    setMaxHours(value);
+    setShowAllMobilePrizes(false);
+  }
 
   return (
     <section
@@ -213,7 +226,7 @@ export function PrizeGrid() {
             <button
               key={filter.label}
               type="button"
-              onClick={() => setMaxHours(filter.value)}
+              onClick={() => selectHourFilter(filter.value)}
               className={`rounded-full border px-4 py-2 text-sm font-black uppercase tracking-[0.12em] transition duration-200 ${
                 isActive
                   ? "border-brand-red bg-brand-red text-white shadow-[0_10px_20px_rgba(239,98,108,0.22)]"
@@ -227,17 +240,26 @@ export function PrizeGrid() {
       </div>
 
       <p className="mt-4 text-center text-sm font-medium text-brand-dark/60">
-        Showing {filteredPrizes.length} of {prizes.length} prizes.
+        <span className="sm:hidden">
+          Showing {visibleMobilePrizeCount} of {filteredPrizes.length} prizes.
+        </span>
+        <span className="hidden sm:inline">
+          Showing {filteredPrizes.length} of {prizes.length} prizes.
+        </span>
       </p>
 
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {filteredPrizes.map((prize, index) => {
+          const hideOnMobile = !showAllMobilePrizes && index >= mobilePrizeLimit;
+
           return (
             <ExternalPrizeLink
               key={`${prize.name}-${prize.href}`}
               href={prize.href}
               description="The prize link will open in a new tab."
-              className="group flex min-h-[23rem] flex-col rounded-lg border border-brand-dark/10 bg-[#f3ead8] p-4 shadow-[0_18px_40px_rgba(37,22,5,0.08)] transition duration-300 hover:border-brand-green/40 hover:shadow-[0_20px_46px_rgba(65,93,67,0.14)]"
+              className={`group min-h-[23rem] flex-col rounded-lg border border-brand-dark/10 bg-[#f3ead8] p-4 shadow-[0_18px_40px_rgba(37,22,5,0.08)] transition duration-300 hover:border-brand-green/40 hover:shadow-[0_20px_46px_rgba(65,93,67,0.14)] ${
+                hideOnMobile ? "hidden sm:flex" : "flex"
+              }`}
             >
               <div className="relative h-48 overflow-hidden rounded-md sm:h-52">
                 {prize.image ? (
@@ -259,6 +281,19 @@ export function PrizeGrid() {
           );
         })}
       </div>
+
+      {hasMoreMobilePrizes ? (
+        <div className="mt-8 flex justify-center sm:hidden">
+          <button
+            type="button"
+            onClick={() => setShowAllMobilePrizes((current) => !current)}
+            className="rounded-full border border-brand-dark/12 bg-brand-dark px-5 py-3 text-sm font-black uppercase tracking-[0.12em] text-brand-cream shadow-[0_14px_30px_rgba(37,22,5,0.18)] transition duration-200 hover:bg-brand-green focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2 focus:ring-offset-brand-cream"
+            aria-expanded={showAllMobilePrizes}
+          >
+            {showAllMobilePrizes ? "Show less" : "View more"}
+          </button>
+        </div>
+      ) : null}
     </section>
   );
 }
