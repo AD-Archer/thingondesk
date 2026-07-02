@@ -49,8 +49,7 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
     question: "What is thingondesk?",
     answer: (
       <>
-        thingondesk is a ysws where you make a small project for your desk and
-        shows time, progress, growth, or work in motion. Ship the project,
+        thingondesk is a ysws where you make a small project for your desk. Ship the project,
         document it, and you can earn something desk-related.
       </>
     ),
@@ -261,7 +260,7 @@ export default function Home() {
               {buildPrompts.map((item, index) => (
                 <div
                   key={item.title}
-                  className="paper-surface soft-shadow rounded-lg border border-brand-dark/12 p-5 transition duration-300 hover:-translate-y-1"
+                  className="paper-surface soft-shadow rounded-lg border border-brand-dark/12 p-5 transition-colors duration-300 hover:border-brand-dark/24"
                 >
                   <div className="mb-5 flex items-center gap-3">
                     <div className="flex h-9 w-9 items-center justify-center rounded-md bg-brand-red text-sm font-black text-white">

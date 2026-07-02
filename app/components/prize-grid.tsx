@@ -43,6 +43,18 @@ const prizes = [
     image: "https://m.media-amazon.com/images/I/81qEr5kbIwL._AC_SL1500_.jpg",
   },
   {
+    name: "HUION Kamvas 13 (Gen 3) Drawing Tablet",
+    price: 210,
+    href: "https://a.co/d/02c4q9UR",
+    image: "https://m.media-amazon.com/images/I/6139Gs3+FAL._AC_SL1500_.jpg",
+  },
+  {
+    name: "UGEE drawing tablet",
+    price: 50,
+    href: "https://a.co/d/0cXK2qkK",
+    image: "https://m.media-amazon.com/images/I/51pdzvGQLFL._AC_SL1500_.jpg",
+  },
+  {
     name: "FEZIBO Standing Desk, 48 x 24 Inches",
     price: 94.99,
     href: "https://www.amazon.com/FEZIBO-Standing-Electric-Adjustable-Computer/dp/B0F8MHPVPH/ref=sr_1_2?crid=TYDTVH3UAL5I&dib=eyJ2IjoiMSJ9.jKr2pidEqRjl_2EB2Coaw5TO3NceW-Rhk4DHrj03mH-nw58f1bSnuLeuUg-sU83_nuSHidFKrzRFef5iUZUFj0mhdhpLgax8Aq08Jb4ObE1hQrd61k88JpRan_Bvl7cZAD6coYgKu2lbfshjzio3xxCC0B7HF911gooYUGn5MPfmwEEO7NGocOhIfoUThik95uEz29PyOtfxxBwDfUfYAws4zoSDmltPIQ9aEFIyccK2MPhn0gAc6tSi7bHi_H4gVdY1ctHoTHv8JbyOk0MRlVGSkxuN_YUPQBHj6nfk6dQ.JUy7LHWmrPQSxzWEBgxP8S2qKrGlF9w7hklRu0QBfLY&dib_tag=se&keywords=moving%2Bdesk&qid=1782842481&s=amazon-devices&sprefix=moving%2Bdes%2Camazon-devices%2C149&sr=1-2&th=1",
@@ -90,33 +102,57 @@ const prizes = [
   },
   {
     name: "Like-New Amazon Fire 7 tablet (newest model)",
-    price: 50,
+    price: 51,
     href: "https://www.amazon.com/Like-New-Amazon-display-10-hour-battery/dp/B099GYVGW4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Xqi1fAXbYVaVQDpectnL0hX8ExQITrTc4o_ItrC3uqUOqauZDQnOCTFTcB1c_Bw60SjjevSTJzZQYtpur7LHuq89ku07y2yqQJwfoSRbJXxbyn9_MsRXX_vWzKgzINLUMUPdtx-Rf4fTVWtGq32wwr31IohSg9jyYZZG1vw9Fvdyxjyf20Fyw_Xt7PeXeDefDs5GT7eg_OF03kQIwpetmaPhfFRXn0pQ-eKVgYZPw_XqMEBdAwLOjVQUorm3oqiwY91NejTRkg4rJH_lMbmMzLry2KWqpGp1K6eMZoOaVoo.BhrGFE6kBj5HND71FjvE61QH68F6HLZACFdjMJqtPtE&dib_tag=se&keywords=amazon+fire+5&qid=1782846063&s=amazon-devices&sr=1-1&ufe=app_do%3Aamzn1.fos.ed73e2ba-4d06-4781-aee7-c317fe036206",
     image: "https://m.media-amazon.com/images/I/61pZPRMTAdL._AC_SL1000_.jpg",
   },
   {
     name: "Carlisle 13 oz Candy Bowl",
-    price: 5.15,
+    price: 6,
     href: "https://www.amazon.com/Carlisle-453307-Plastic-Dessert-Bowls/dp/B004OA0YL2/ref=sr_1_8?crid=CARS0SY7H7T6&dib=eyJ2IjoiMSJ9.Fj4x-2fLzzbo0KQiC7He0scRTIicz88WZG2kj09ytcg8VO_DvfV2kVLDAJ6fx3555ayQuqGSAj6fkVAOW7KhSiqTaXgFOwgStEg_sWgfqC_TssHVylxz23nJWvdBLVincre9qbMrCKsXQor6IQtb1L29IUmJmFGZGOvDfz2IQf2yC-GsS-BljNITMsj-QjURY-slxz96EEXr0o6nR0E-XIlPTuX9rvfVUuSmfmZA2kDDFcjUPmOAF2fbQeInuB0fl4baejOFxbfdEfISj4iS8W4KtDEpnXtqRHENzEf3vqw.abS9wzh6a1pW_AyqnVKgu2NU2K6FEjATfiWjhijCmNo&dib_tag=se&keywords=candy%2Bbowl&qid=1782936068&sprefix=candy%2Bbow%2Caps%2C202&sr=8-8&th=1",
     image: "https://m.media-amazon.com/images/I/71PTatPe2YL._AC_SL1500_.jpg",
   },
   {
     name: "Amazon Echo Spot",
-    price: 79.99,
+    price: 81,
     href: "https://www.amazon.com/dp/B0BFC7WQ6R?ref=clp_cat_p_0&th=1",
     image: "https://m.media-amazon.com/images/I/71cSMRiDN2L._AC_SL1500_.jpg",
   },
   {
     name: "WAIT FLY Heart-shaped Bowls",
-    price: 11,
+    price: 12,
     href: "https://www.amazon.com/WAIT-FLY-Heart-shaped-Dessert-Household/dp/B079MCNYKF/ref=sr_1_10?crid=CARS0SY7H7T6&dib=eyJ2IjoiMSJ9.Fj4x-2fLzzbo0KQiC7He0scRTIicz88WZG2kj09ytcg8VO_DvfV2kVLDAJ6fx3555ayQuqGSAj6fkVAOW7KhSiqTaXgFOwgStEg_sWgfqC_TssHVylxz23nJWvdBLVincre9qbMrCKsXQor6IQtb1L29IUmJmFGZGOvDfz2IQf2yC-GsS-BljNITMsj-QjURY-slxz96EEXr0o6nR0E-XIlPTuX9rvfVUuSmfmZA2kDDFcjUPmOAF2fbQeInuB0fl4baejOFxbfdEfISj4iS8W4KtDEpnXtqRHENzEf3vqw.abS9wzh6a1pW_AyqnVKgu2NU2K6FEjATfiWjhijCmNo&dib_tag=se&keywords=candy%2Bbowl&qid=1782936068&sprefix=candy%2Bbow%2Caps%2C202&sr=8-10&th=1",
     image: "https://m.media-amazon.com/images/I/51tkMPNepRL._AC_SL1500_.jpg",
   },
   {
     name: "8 lbs of candy",
-    price: 44,
+    price: 45,
     href: "https://www.amazon.com/Ultimate-Assorted-Candy-Party-Mix/dp/B0GMSKB378/ref=sr_1_9?crid=3OMI3AXXVC2Q0&dib=eyJ2IjoiMSJ9.9Gp9Ecq2UjcxDYz-wDUXO9sUVNYcsT44ONyk6BQ7c6GizXZmsojElvBIzlmQmNfyIX1CkJr5bnNx-yTU0_okQzzRctUrbLFKuCJCoNc2FM2gMO3JZa4VJ-F9xoK_SYE0kF3yPtFp37okC7NzgoYdRFsW0oQP6TD7ji7ICH6xHnYUhiFtd-X2l13z5n7e4_yAhOA2GT8McMF-s0GUoE2dyud7Q_Youbo_U-x9Mbd37XruKEzn7BwHXDjBQGSYyS3H5GEJMjcWDn5BinayYLVhD4XxBy3iEDPX3HD129IBGjw.7vP7BGKQsl0PCirvCBDlssdRlSIoiEK63n6i3AxfJ0k&dib_tag=se&keywords=candy&qid=1782936300&sprefix=candy%2Caps%2C216&sr=8-9&th=1",
     image: "https://m.media-amazon.com/images/I/917I2L+NG0L._SL1500_.jpg",
+  },
+  {
+    name: "5 Pcs Fidget Toys",
+    price: 20,
+    href: "https://www.amazon.com/Fidgets-Spinner-Magnetic-Stocking-Stuffers/dp/B0FDJ3LF8H/ref=sr_1_6?crid=3I0AZBWXYKBDH&dib=eyJ2IjoiMSJ9.MQhWGNU0u5Nrky3Vmoms2mFjXLWikA5VtSk7LYIoJETAQjwMiKbggYjnlf45r60qQ0jPwbmiToWIR4oQguUt6tJDmlk7yZlOyCO_7RDEqRH3n15WrRjfu0s4nQcbsOd98bSI2VvMW5kf5j9sajvOLoiAFGi2dcIUqRZ0montNCzTAb4ts8s39YxF9whtOk24bQXOxjKn7aZ7nPnJOx0e5YFUlKgyCSIeblfActI67JlPXq3ziR0DH9wyfpH6AO1dCTgZ0N67DXasYI3AqoA3tMkKzjmTJEJ_K-CzGWzdzFo.gBnXIrHwdV8oneRvnknUUOuj_oOTBz3_qCDcvUkH5IU&dib_tag=se&keywords=desk%2Btoys&qid=1783019295&sprefix=desk%2Btoys%2Caps%2C185&sr=8-6&th=1",
+    image: "https://m.media-amazon.com/images/I/81jgc-32wbL._AC_SL1500_.jpg",
+  },
+  {
+    name: "Moving Sand Art",
+    price: 10,
+    href: "https://www.amazon.com/ANBOER-Dynamic-Picture-Sandscape-Relaxing/dp/B099KPMSDB/ref=sr_1_1?crid=3FPQLBF6H96R2&dib=eyJ2IjoiMSJ9.s_1drkrkdSw_mO6ZJITWhDeQizh89DuPxr4nkPZdNsPeqhF9DcJ2GnGtCaXh7PUT3XvOsoz--VifljUqdJLMv-nypFxd0FgsHG_3d9F7cdYvWaQrJX7HQXQAyTdEDthiq4IAkN2OgbkbZsFSqkGwzlYyidTl6_-1d_CcTEi61QxbJZmhnjdYRWPNaMz9ITNQyyz3BWeEAoEQFZx07URQLvmVnHAZgoExBPak2UDfCuaRfeM3vz2kCCKxyUJJiToK5-MlRhwsLblgI2QCHi_I265Mj_XS8gaYB1agg9v7X8A.d1v7eMJMhMRo0FcKmFBChJnRXeopkiRBAvQAW_vZUzo&dib_tag=se&keywords=moving%2Bsand%2Bart&qid=1783019584&sprefix=moving%2Bsand%2B%2Caps%2C164&sr=8-1&th=1",
+    image: "https://m.media-amazon.com/images/I/71TmuNg8OjL._AC_SL1500_.jpg",
+  },
+  {
+    name: "Newton's Cradle",
+    price: 20,
+    href: "https://a.co/d/00nkuBEE",
+    image: "https://m.media-amazon.com/images/I/61qJeUoGLVL._AC_SL1500_.jpg",
+  },
+  {
+    name: "Lego Lucky Bamboo",
+    price: 15,
+    href: "https://a.co/d/09QIAweD",
+    image: "https://m.media-amazon.com/images/I/71uY4UvQEfL._AC_SL1500_.jpg",
   },
 ];
 
@@ -201,7 +237,7 @@ export function PrizeGrid() {
               key={`${prize.name}-${prize.href}`}
               href={prize.href}
               description="The prize link will open in a new tab."
-              className="group flex min-h-[23rem] flex-col rounded-lg border border-brand-dark/10 bg-[#f3ead8] p-4 shadow-[0_18px_40px_rgba(37,22,5,0.08)] transition duration-300 hover:-translate-y-1 hover:border-brand-green/40 hover:shadow-[0_22px_55px_rgba(65,93,67,0.16)]"
+              className="group flex min-h-[23rem] flex-col rounded-lg border border-brand-dark/10 bg-[#f3ead8] p-4 shadow-[0_18px_40px_rgba(37,22,5,0.08)] transition duration-300 hover:border-brand-green/40 hover:shadow-[0_20px_46px_rgba(65,93,67,0.14)]"
             >
               <div className="relative h-48 overflow-hidden rounded-md sm:h-52">
                 {prize.image ? (
