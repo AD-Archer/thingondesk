@@ -18,6 +18,33 @@ const buildPrompts = [
   },
 ];
 
+const ideaItems = [
+  {
+    title: "Advent calendar",
+    copy: "A physical countdown, daily reveal box, desk display, or tiny ritual that changes over time.",
+    image:
+      "https://m.media-amazon.com/images/I/71yrNn2fqoL.jpg",
+  },
+  {
+    title: "Smart dashboard",
+    copy: "A focused screen for weather, todos, timers, calendar events, music, school, or your own stats.",
+    image:
+      "https://owp.klarna.com/product/640x640/3256916157/Amazon-Echo-Show-21-Smart-Home-Assistant.jpg?ph=true",
+  },
+  {
+    title: "Activity visualization",
+    copy: "A graph, light pattern, sculpture, chart, plant, or other view of what you worked on.",
+    image:
+      "https://docs.github.com/assets/cb-35216/images/help/profile/contributions-graph.png",
+  },
+  {
+    title: "Digital calendar",
+    copy: "A desk calendar, e-ink panel, tablet view, printed artwork, or calendar object with a twist.",
+    image:
+      "https://www.joyhong.com/wp-content/uploads/2025/04/1%E6%AD%A3%E9%9D%A2%E5%9B%BE-2-%E6%97%A5%E5%8E%86-2.png",
+  },
+];
+
 const faqItems: Array<{ question: string; answer: ReactNode }> = [
   {
     question: "What is thingondesk?",
@@ -244,6 +271,56 @@ export default function Home() {
           </div>
         </section>
 
+        <section
+          id="ideas"
+          className="bg-[#251605] px-5 py-20 text-[#f6e8ea] sm:px-8"
+        >
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-9 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#ddd92a]">
+                  Ideas
+                </p>
+                <h2 className="mt-3 max-w-2xl text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
+                  It does not have to be just code.
+                </h2>
+              </div>
+              <p className="max-w-xl text-base font-semibold leading-7 text-[#f6e8ea]/72 sm:text-lg">
+                Software, hardware, physical devices, artwork, printed pieces,
+                and desk objects all count. The goal is a project that makes
+                time, progress, or work feel visible.
+              </p>
+            </div>
+
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {ideaItems.map((idea) => (
+                <article
+                  key={idea.title}
+                  className="group overflow-hidden rounded-lg border border-[#f6e8ea]/12 bg-[#f6e8ea]/8 shadow-[0_18px_46px_rgba(0,0,0,0.2)] transition duration-300 hover:-translate-y-1 hover:border-[#ddd92a]/45"
+                >
+                  <div className="relative aspect-[4/3] bg-[#ded6c4]">
+                    <Image
+                      src={idea.image}
+                      alt=""
+                      fill
+                      sizes="(min-width: 1024px) 280px, (min-width: 640px) 50vw, 100vw"
+                      className="object-contain p-3 transition duration-300 group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-xl font-black leading-tight">
+                      {idea.title}
+                    </h3>
+                    <p className="mt-3 text-sm font-medium leading-6 text-[#f6e8ea]/70">
+                      {idea.copy}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="prizes" className="bg-brand-cream px-5 py-20 sm:px-8">
           <PrizeGrid />
         </section>
@@ -259,7 +336,7 @@ export default function Home() {
               <p className="text-xs font-black uppercase tracking-[0.18em] text-[#ef626c]">
                 What is thingondesk?
               </p>
-              <h2 className="mt-3 max-w-3xl text-4xl font-black leading-none sm:text-6xl lg:text-7xl">
+              <h2 className="mt-3 max-w-2xl text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
                 Make something for your desk. Get something for your desk.
               </h2>
               <p className="mt-5 max-w-2xl text-base font-bold leading-7 text-[#251605]/72 sm:text-lg">
