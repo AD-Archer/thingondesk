@@ -49,10 +49,9 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
     question: "What is thingondesk?",
     answer: (
       <>
-        thingondesk is a build challenge where you make a small project that
-        lives on or beside your desk and shows time, progress, growth, or work
-        in motion. Ship the project, document it, and you can earn something
-        desk-related back.
+        thingondesk is a ysws where you make a small project for your desk and
+        shows time, progress, growth, or work in motion. Ship the project,
+        document it, and you can earn something desk-related.
       </>
     ),
   },
@@ -61,8 +60,15 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
     answer: (
       <>
         Finish your project, collect a short demo or a few photos, and follow
-        the submission instructions posted with the challenge. Your project
-        should be open source, functional, and include a README.
+        the{" "}
+        <ExternalPrizeLink
+          href="https://forms.hackclub.com/t/t29rbw4xmRus"
+          className="font-black text-[#ef626c] underline decoration-[#ef626c]/70 decoration-2 underline-offset-4 transition hover:text-[#251605]"
+          description="The thingondesk submission form will open in a new tab."
+        >
+          submission form
+        </ExternalPrizeLink>
+        . Your project should be open source, functional, and include a README.
       </>
     ),
   },
@@ -79,8 +85,15 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
     question: "How do I join the community and ask questions?",
     answer: (
       <>
-        Jump into the Hack Club Slack and use the links in the footer to get
-        there. Share progress, ask questions, and post updates as you build.
+        Jump into the{" "}
+        <ExternalPrizeLink
+          href="https://hackclub.enterprise.slack.com/archives/C0BEDRYH6AX"
+          className="font-black text-[#ef626c] underline decoration-[#ef626c]/70 decoration-2 underline-offset-4 transition hover:text-[#251605]"
+          description="The Hack Club Slack channel will open in a new tab."
+        >
+          Hack Club Slack channel
+        </ExternalPrizeLink>
+        . Share progress, ask questions, and post updates as you build.
       </>
     ),
   },
@@ -103,15 +116,15 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
         <ExternalPrizeLink
           href="https://hackatime.hackclub.com/"
           className="font-black text-[#ef626c] underline decoration-[#ef626c]/70 decoration-2 underline-offset-4 transition hover:text-[#251605]"
-          description="Click Okay to open Hackatime in a new tab."
+          description="Hackatime will open in a new tab so you can track your coding hours."
         >
           Hackatime
         </ExternalPrizeLink>{" "}
         to track your hours. For hardware projects, use{" "}
         <ExternalPrizeLink
-          href="https://docs.hackclub.com/handbook/public-infrastructure/hackatime-lapse-and-lookout"
+          href="https://docs.hackclub.com/handbook/public-infrastructure/hackatime-lapse-and-lookout#lapse-and-lookout"
           className="font-black text-[#ef626c] underline decoration-[#ef626c]/70 decoration-2 underline-offset-4 transition hover:text-[#251605]"
-          description="Click Okay to open the Hackatime, Lapse, and Lookout docs in a new tab."
+          description="The Hackatime, Lapse, and Lookout docs will open in a new tab."
         >
           Lapse and Lookout docs
         </ExternalPrizeLink>{" "}
@@ -138,14 +151,12 @@ export default function Home() {
         </video>
         <div className="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(18,43,28,0.82)_0%,rgba(31,71,42,0.64)_42%,rgba(226,111,88,0.34)_100%)]" />
         <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_18%_25%,rgba(246,232,234,0.12),transparent_32%),linear-gradient(180deg,rgba(16,34,24,0.12),rgba(11,29,21,0.82)_78%,rgba(16,43,28,0.9))]" />
-        <div className="absolute inset-x-0 top-0 -z-10 h-1.5 bg-[#b9f2f8]" />
-        <div className="absolute inset-x-0 top-1.5 -z-10 h-1.5 bg-[#45c84b]" />
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-[linear-gradient(180deg,transparent,rgba(16,43,28,0.2))]" />
 
         <ExternalPrizeLink
           href="https://hackclub.com"
-          className="absolute left-0 top-0 z-30 block w-24 transition-transform duration-300 hover:-translate-y-0.5 sm:w-32 lg:w-40"
-          description="Click Okay to open Hack Club in a new tab."
+          className="absolute left-0 top-0 z-30 block w-28 transition-transform duration-300 hover:-translate-y-0.5 sm:w-40 lg:w-52"
+          description="Hack Club will open in a new tab."
           aria-label="Hack Club"
         >
           <Image
@@ -158,11 +169,11 @@ export default function Home() {
           />
         </ExternalPrizeLink>
 
-        <header className="mx-auto flex w-full max-w-7xl items-center justify-end border-b border-brand-light/10 pb-5">
+        <header className="mx-auto flex w-full max-w-7xl items-center justify-end pb-5">
           <ExternalPrizeLink
             href="https://www.antonioarcher.com"
             className="text-xs font-bold uppercase text-brand-light/80 underline decoration-brand-sky/80 decoration-2 underline-offset-4 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)] transition-colors duration-200 hover:text-brand-sky hover:decoration-brand-sky"
-            description="Click Okay to open Archer YSWS in a new tab."
+            description="Archer YSWS will open in a new tab."
           >
             Archer YSWS
           </ExternalPrizeLink>
@@ -341,31 +352,6 @@ export default function Home() {
                 <h2 className="mt-3 max-w-2xl text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
                   Start here if you are wondering what counts.
                 </h2>
-              </div>
-              <div className="grid gap-3 sm:grid-cols-3">
-                {[
-                  [
-                    "Build",
-                    "Make something desk-sized that shows time, progress, growth, or work.",
-                  ],
-                  ["Track", "Record your build hours honestly while you work."],
-                  [
-                    "Submit",
-                    "Share the finished project, docs, and proof of work.",
-                  ],
-                ].map(([title, copy]) => (
-                  <div
-                    key={title}
-                    className="rounded-lg border border-[#251605]/12 bg-[#f6e8ea]/70 p-4 shadow-[0_14px_32px_rgba(37,22,5,0.08)]"
-                  >
-                    <p className="text-lg font-black leading-tight text-[#ef626c]">
-                      {title}
-                    </p>
-                    <p className="mt-2 text-base font-semibold leading-7 text-[#251605]/70">
-                      {copy}
-                    </p>
-                  </div>
-                ))}
               </div>
             </div>
 
