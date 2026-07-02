@@ -23,9 +23,10 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
     question: "What is thingondesk?",
     answer: (
       <>
-        thingondesk is a Hack Club ysws for desk-sized projects that make
-        progress visible while you work. Make something useful, weird, or
-        beautiful, then show it off.
+        thingondesk is a build challenge where you make a small project that
+        lives on or beside your desk and shows time, progress, growth, or work
+        in motion. Ship the project, document it, and you can earn something
+        desk-related back.
       </>
     ),
   },
@@ -34,8 +35,17 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
     answer: (
       <>
         Finish your project, collect a short demo or a few photos, and follow
-        the submission instructions posted with the challenge. If you get stuck,
-        ask in the community first so you can get pointed to the right place.
+        the submission instructions posted with the challenge. Your project
+        should be open source, functional, and include a README.
+      </>
+    ),
+  },
+  {
+    question: "Who can participate?",
+    answer: (
+      <>
+        Teens ages 13-18 can join. thingondesk is hosted by Hack Club, and
+        everything is free.
       </>
     ),
   },
@@ -83,21 +93,6 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
       </>
     ),
   },
-];
-
-const eligibleItems = [
-  "You are between 13 and 18 years old.",
-  "You want to join Hack Club or take part in a Hack Club ysws.",
-  "You can spend time building something nice and share progress along the way.",
-  "Everything is free.",
-];
-
-const qualifyingItems = [
-  "Open source forever.",
-  "Functional as described in your project description.",
-  "Includes a README.md.",
-  "Accessible to any user without prior experience or setup.",
-  "Time is recorded faithfully through Hackatime for software or Lapse and Lookout for hardware.",
 ];
 
 export default function Home() {
@@ -154,12 +149,8 @@ export default function Home() {
             </h1>
 
             <p className="mt-5 max-w-3xl text-3xl font-black leading-tight text-brand-light drop-shadow-[0_4px_18px_rgba(0,0,0,0.5)] sm:text-4xl lg:text-5xl">
-              Build a desk thing. Win a tablet.
-            </p>
-
-            <p className="mt-5 max-w-2xl text-lg font-semibold leading-8 text-brand-light/90 drop-shadow-[0_3px_14px_rgba(0,0,0,0.45)]">
-              Make a clock, tracker, timer, calendar, growing tree, river, or
-              any small tool that makes progress visible while you work.
+              Make something to put on your desk we’ll give you something for
+              your desk
             </p>
 
             <div className="mt-9 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
@@ -257,114 +248,53 @@ export default function Home() {
           <PrizeGrid />
         </section>
 
-        <section id="hack-club" className="hackclub-section">
-          <div className="hackclub-shell">
-            <div className="hackclub-copy">
-              <h2>What is Hack Club?</h2>
-              <p>
-                Hack Club runs online and in-person programs where teens build
-                ambitious, weird, useful things together. Everything is free,
-                ran by teens for teens, and built around shipping real projects to win prizes.
+        <section
+          id="hack-club"
+          className="relative isolate overflow-hidden border-y border-[#251605]/15 bg-[#ded6c4] px-5 py-20 text-[#251605] sm:px-8 lg:py-28"
+        >
+          <div className="pointer-events-none absolute -right-16 bottom-[-4rem] -z-10 h-56 w-56 rounded-full border-[2rem] border-[#7f796d]/18" />
+          <div className="pointer-events-none absolute left-0 top-0 -z-10 h-2 w-full bg-[#ef626c]" />
+          <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+            <div className="lg:sticky lg:top-8">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-[#ef626c]">
+                What is thingondesk?
               </p>
-
-              <div className="hackclub-stats" aria-label="Hack Club facts">
-                <div>
-                  <span>100k+</span>
-                  <p>makers</p>
-                </div>
-                <div>
-                  <span>13-18</span>
-                  <p>years old</p>
-                </div>
-                <div>
-                  <span>Cost?</span>
-                  <p>$0 completely free to join</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="hackclub-photo-board" aria-hidden="true">
-              <div className="hackclub-photo hackclub-photo-video">
-                <iframe
-                  className="absolute inset-0 h-full w-full border-0"
-                  src="https://www.youtube-nocookie.com/embed/kaEFv7e49mo?loop=1&playlist=kaEFv7e49mo&controls=0&playsinline=1&modestbranding=1&rel=0"
-                  title="Hack Club video"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  loading="lazy"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
-              </div>
-              <div className="hackclub-photo hackclub-photo-photo1">
-                <Image
-                  src="/images/hero_photo1.webp"
-                  alt=""
-                  fill
-                  sizes="(min-width: 640px) 22rem, 100vw"
-                  className="object-contain p-4"
-                />
-              </div>
-              <div className="hackclub-photo hackclub-photo-photo5">
-                <Image
-                  src="/images/hero_photo5.webp"
-                  alt=""
-                  fill
-                  sizes="(min-width: 640px) 22rem, 100vw"
-                  className="object-contain p-4"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="faq" className="faq-section">
-          <div className="faq-shell">
-            <div className="faq-heading">
-              <p className="section-kicker">FAQ</p>
-              <h2>
-                Got Questions? <br />I got answers.
+              <h2 className="mt-3 max-w-3xl text-4xl font-black leading-none sm:text-6xl lg:text-7xl">
+                Make something for your desk. Get something for your desk.
               </h2>
-              <p>
-                Short answers first. The important details about tracking and
-                prize hours live here, after you already know what you want to
-                build.
+              <p className="mt-5 max-w-2xl text-base font-bold leading-7 text-[#251605]/72 sm:text-lg">
+                Build a small project that sits on or beside your desk and
+                makes time, progress, or growth visible while you work. It can
+                be useful, strange, pretty, hardware, software, or both.
               </p>
+              <a
+                href="#faq"
+                className="mt-7 inline-flex rounded-lg bg-[#ef626c] px-5 py-3 text-sm font-black uppercase text-white shadow-[0_14px_26px_rgba(37,22,5,0.14)] transition hover:-translate-y-0.5 hover:bg-[#d94f5a]"
+              >
+                Read the FAQ
+              </a>
             </div>
 
-            <div className="faq-layout">
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question} className="faq-item">
-                    <summary>
-                      <span>{item.question}</span>
-                      <span className="faq-toggle" aria-hidden="true">
-                        +
-                      </span>
-                    </summary>
-                    <div className="faq-answer">{item.answer}</div>
-                  </details>
-                ))}
-              </div>
-
-              <aside className="faq-side-note">
-                <p className="section-kicker">Before you submit</p>
-                <h3>Keep it simple and honest.</h3>
-                <ul>
-                  {eligibleItems.slice(0, 3).map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                <div className="faq-divider" />
-                <h3>What counts?</h3>
-                <ul>
-                  {qualifyingItems.slice(0, 4).map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                <p className="faq-help">
-                  Need a person? Head to the Hack Club Slack from the footer and
-                  ask there.
-                </p>
-              </aside>
+            <div id="faq" className="grid gap-3">
+              {faqItems.map((item) => (
+                <details
+                  key={item.question}
+                  className="group rounded-lg border border-[#251605]/12 bg-[#f6e8ea]/72 shadow-[0_14px_32px_rgba(37,22,5,0.1)] transition hover:-translate-y-0.5 hover:border-[#ef626c]/45 open:border-[#ef626c]/55 open:bg-[#f6e8ea]"
+                >
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-5 text-base font-black leading-tight marker:hidden [&::-webkit-details-marker]:hidden">
+                    <span>{item.question}</span>
+                    <span
+                      className="grid h-8 w-8 flex-none place-items-center rounded-lg bg-[#ddd92a] text-2xl leading-none text-[#251605] transition group-open:rotate-45"
+                      aria-hidden="true"
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-base font-medium leading-7 text-[#251605]/72">
+                    {item.answer}
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </section>
