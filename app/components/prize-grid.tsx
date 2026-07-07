@@ -54,12 +54,12 @@ const prizes = [
     href: "https://a.co/d/0cXK2qkK",
     image: "https://m.media-amazon.com/images/I/51pdzvGQLFL._AC_SL1500_.jpg",
   },
-  // {
-  //   name: "FEZIBO Standing Desk, 48 x 24 Inches",
-  //   price: 94.99,
-  //   href: "https://www.amazon.com/FEZIBO-Standing-Electric-Adjustable-Computer/dp/B0F8MHPVPH/ref=sr_1_2?crid=TYDTVH3UAL5I&dib=eyJ2IjoiMSJ9.jKr2pidEqRjl_2EB2Coaw5TO3NceW-Rhk4DHrj03mH-nw58f1bSnuLeuUg-sU83_nuSHidFKrzRFef5iUZUFj0mhdhpLgax8Aq08Jb4ObE1hQrd61k88JpRan_Bvl7cZAD6coYgKu2lbfshjzio3xxCC0B7HF911gooYUGn5MPfmwEEO7NGocOhIfoUThik95uEz29PyOtfxxBwDfUfYAws4zoSDmltPIQ9aEFIyccK2MPhn0gAc6tSi7bHi_H4gVdY1ctHoTHv8JbyOk0MRlVGSkxuN_YUPQBHj6nfk6dQ.JUy7LHWmrPQSxzWEBgxP8S2qKrGlF9w7hklRu0QBfLY&dib_tag=se&keywords=moving%2Bdesk&qid=1782842481&s=amazon-devices&sprefix=moving%2Bdes%2Camazon-devices%2C149&sr=1-2&th=1",
-  //   image: "https://m.media-amazon.com/images/I/71smFjr2QgL._AC_SL1500_.jpg",
-  // },
+  {
+    name: "FEZIBO Standing Desk, 48 x 24 Inches",
+    price: 96,
+    href: "https://www.amazon.com/FEZIBO-Standing-Electric-Adjustable-Computer/dp/B0F8MHPVPH/ref=sr_1_2?crid=TYDTVH3UAL5I&dib=eyJ2IjoiMSJ9.jKr2pidEqRjl_2EB2Coaw5TO3NceW-Rhk4DHrj03mH-nw58f1bSnuLeuUg-sU83_nuSHidFKrzRFef5iUZUFj0mhdhpLgax8Aq08Jb4ObE1hQrd61k88JpRan_Bvl7cZAD6coYgKu2lbfshjzio3xxCC0B7HF911gooYUGn5MPfmwEEO7NGocOhIfoUThik95uEz29PyOtfxxBwDfUfYAws4zoSDmltPIQ9aEFIyccK2MPhn0gAc6tSi7bHi_H4gVdY1ctHoTHv8JbyOk0MRlVGSkxuN_YUPQBHj6nfk6dQ.JUy7LHWmrPQSxzWEBgxP8S2qKrGlF9w7hklRu0QBfLY&dib_tag=se&keywords=moving%2Bdesk&qid=1782842481&s=amazon-devices&sprefix=moving%2Bdes%2Camazon-devices%2C149&sr=1-2&th=1",
+    image: "https://m.media-amazon.com/images/I/71smFjr2QgL._AC_SL1500_.jpg",
+  },
   {
     name: "Nintendo Sound Clock: Alarmo",
     price: 97.49,
@@ -137,6 +137,13 @@ const prizes = [
     image: "https://m.media-amazon.com/images/I/81jgc-32wbL._AC_SL1500_.jpg",
   },
   {
+    name: "Airpods 4 NOT Noise Cancelling",
+    price: 135,
+    href: "https://www.apple.com/airpods-4/",
+    image:
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-4-anc-select-202409_FMT_WHH?wid=752&hei=636&fmt=jpeg&qlt=90&.v=1725502639798",
+  },
+  {
     name: "Moving Sand Art",
     price: 10,
     href: "https://www.amazon.com/ANBOER-Dynamic-Picture-Sandscape-Relaxing/dp/B099KPMSDB/ref=sr_1_1?crid=3FPQLBF6H96R2&dib=eyJ2IjoiMSJ9.s_1drkrkdSw_mO6ZJITWhDeQizh89DuPxr4nkPZdNsPeqhF9DcJ2GnGtCaXh7PUT3XvOsoz--VifljUqdJLMv-nypFxd0FgsHG_3d9F7cdYvWaQrJX7HQXQAyTdEDthiq4IAkN2OgbkbZsFSqkGwzlYyidTl6_-1d_CcTEi61QxbJZmhnjdYRWPNaMz9ITNQyyz3BWeEAoEQFZx07URQLvmVnHAZgoExBPak2UDfCuaRfeM3vz2kCCKxyUJJiToK5-MlRhwsLblgI2QCHi_I265Mj_XS8gaYB1agg9v7X8A.d1v7eMJMhMRo0FcKmFBChJnRXeopkiRBAvQAW_vZUzo&dib_tag=se&keywords=moving%2Bsand%2Bart&qid=1783019584&sprefix=moving%2Bsand%2B%2Caps%2C164&sr=8-1&th=1",
@@ -154,6 +161,47 @@ const prizes = [
     href: "https://a.co/d/09QIAweD",
     image: "https://m.media-amazon.com/images/I/71uY4UvQEfL._AC_SL1500_.jpg",
   },
+  {
+    name: "macbook-neo",
+    price: 710,
+    href: "https://www.apple.com/macbook-neo/",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_03009a46-6a34-4080-81d6-8c07d0995fc1?wid=300&hei=300&fmt=pjpeg",
+  },
+  {
+    name: "Apple Pencil(choose generation)",
+    price: 140,
+    href: "https://www.apple.com/apple-pencil/",
+    image:
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/apple-pencil-pro-splitter-202405_FMT_WHH?wid=448&hei=800&fmt=png-alpha&.v=cU9HSUJpZUhzWS81ZmZ1ZWtXeDJEdlRJWGw3S3R6dEpCTGNXeVVhZUFHWWZ4Ym1VaENGQ0RQaFRuYzFqNGgzeXQ5UUowR2tPeDhiOERaa1M4ZXJJbW53ZEd6YWEyeTVsMHRvZnBLdXg3bVdJWktQRGRwZm1IaURrUFhIL2I2WkU",
+  },
+  {
+    name: "AirPods Pro 3",
+    price: 255,
+    href: "https://www.apple.com/airpods-pro/",
+    image:
+      "https://t-mobile.scene7.com/is/image/Tmusprod/195950543698-frontimage?fmt=png-alpha&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&dpr=off",
+  },
+  {
+    name: "Airpods 4 Noise Cancelling",
+    price: 190,
+    href: "https://www.apple.com/airpods-4/",
+    image:
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-4-anc-select-202409_FMT_WHH?wid=752&hei=636&fmt=jpeg&qlt=90&.v=1725502639798",
+  },
+  {
+    name: "Spider-Man vs. Sandman",
+    price: 26,
+    href: "https://www.lego.com/en-us/product/epic-battle-spider-man-vs-sandman-76334",
+    image:
+      "https://www.lego.com/cdn/cs/set/assets/blt8596d885c652914b/76334_Prod_en-gb.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2",
+  },
+  // {
+  //   name: "Lego Lucky Bamboo",
+  //   price: 15,
+  //   href: "https://a.co/d/09QIAweD",
+  //   image:"https://www.lego.com/en-us/product/epic-battle-spider-man-vs-sandman-76334",
+  // },
 ];
 
 const hourFilters = [

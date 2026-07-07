@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { DeadlineBanner } from "./components/deadline-banner";
 import { ExternalPrizeLink } from "./components/external-prize-link";
 import { PrizeGrid } from "./components/prize-grid";
 
@@ -136,6 +137,7 @@ const faqItems: Array<{ question: string; answer: ReactNode }> = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-brand-light font-sans text-brand-dark">
+      <DeadlineBanner />
       <section className="relative isolate flex min-h-screen flex-col overflow-hidden bg-brand-dark px-5 py-5 text-brand-light sm:px-8 lg:px-12">
         <video
           className="absolute inset-0 -z-30 h-full w-full scale-[1.02] object-cover blur-[0.5px] saturate-105"
