@@ -31,6 +31,12 @@ const prizes = [
     image: "https://m.media-amazon.com/images/I/717xrHFm-FL._AC_SL1500_.jpg",
   },
   {
+    name: "PINECIL – Smart Mini Portable Soldering Iron",
+    price: 37,
+    href: "https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/",
+    image: "https://pine64.com/wp-content/uploads/2020/11/Pinecilv2-4.jpg",
+  },
+  {
     name: "Vintage Gumball Machine",
     price: 31,
     href: "https://www.amazon.com/Northern-Popcorn-Company-Gumball-Machine/dp/B0055OY7XC/ref=sr_1_6?crid=2V0DVB1GG5TP&dib=eyJ2IjoiMSJ9.gr9_4LYGnOLZErcTWt6M8javWbh4YLP5fu7KNDFCiUSdWNme9powyHwKiIqkT5_trsen8inx6PwPbi1FUDKr-EZ3K76xcNpJZfkzmtfhltLKrrevBghEmghaNYjmWOqwmNlIY0qGy_3BSeKzjRNTn_C_vW0cadR3l1gEuB4wMZH6RBgjVWASyo0-qZXLmPosnKPXWT2oURiAEkQARP6Ew4nL4er5J53QLF13Fum8AVnxyocXFB678r9Iio1bchOk1sYctYdsVLWZw_qNa2Th_0smNvP2ykUocSJTXkFKO0g.JQ7QBOY_c4QexLLPmcVlUU7fQzXXwClBy8_kCWWLBVU&dib_tag=se&keywords=gumball%2Bmachine&qid=1782936334&sprefix=gumball%2Bmachin%2Caps%2C186&sr=8-6&th=1",
