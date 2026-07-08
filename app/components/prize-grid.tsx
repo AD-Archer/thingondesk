@@ -55,6 +55,18 @@ const prizes = [
     image: "https://m.media-amazon.com/images/I/6139Gs3+FAL._AC_SL1500_.jpg",
   },
   {
+    name: "Logitech MX Master 4",
+    price: 120,
+    href: "https://a.co/d/029eC761",
+    image: "https://m.media-amazon.com/images/I/61z3ENJubZL._AC_SL1500_.jpg",
+  },
+  {
+    name: "TECKNET Wireless Mouse",
+    price: 20,
+    href: "https://a.co/d/0hCygwpz",
+    image: "https://m.media-amazon.com/images/I/61meMz+q8lL._AC_SL1500_.jpg",
+  },
+  {
     name: "UGEE drawing tablet",
     price: 50,
     href: "https://a.co/d/0cXK2qkK",
@@ -65,6 +77,18 @@ const prizes = [
     price: 96,
     href: "https://www.amazon.com/FEZIBO-Standing-Electric-Adjustable-Computer/dp/B0F8MHPVPH/ref=sr_1_2?crid=TYDTVH3UAL5I&dib=eyJ2IjoiMSJ9.jKr2pidEqRjl_2EB2Coaw5TO3NceW-Rhk4DHrj03mH-nw58f1bSnuLeuUg-sU83_nuSHidFKrzRFef5iUZUFj0mhdhpLgax8Aq08Jb4ObE1hQrd61k88JpRan_Bvl7cZAD6coYgKu2lbfshjzio3xxCC0B7HF911gooYUGn5MPfmwEEO7NGocOhIfoUThik95uEz29PyOtfxxBwDfUfYAws4zoSDmltPIQ9aEFIyccK2MPhn0gAc6tSi7bHi_H4gVdY1ctHoTHv8JbyOk0MRlVGSkxuN_YUPQBHj6nfk6dQ.JUy7LHWmrPQSxzWEBgxP8S2qKrGlF9w7hklRu0QBfLY&dib_tag=se&keywords=moving%2Bdesk&qid=1782842481&s=amazon-devices&sprefix=moving%2Bdes%2Camazon-devices%2C149&sr=1-2&th=1",
     image: "https://m.media-amazon.com/images/I/71smFjr2QgL._AC_SL1500_.jpg",
+  },
+  {
+    name: "AULA F75 Pro Wireless Mechanical Keyboard",
+    price: 67,
+    href: "https://a.co/d/0fzUM435",
+    image: "https://m.media-amazon.com/images/I/61MC8BK0w0L._AC_SL1500_.jpg",
+  },
+  {
+    name: "YUNZII B75 PRO",
+    price: 65,
+    href: "https://m.media-amazon.com/images/I/71e0j3u-WUL._AC_SL1500_.jpg",
+    image: "https://a.co/d/03MzJUFb",
   },
   {
     name: "Nintendo Sound Clock: Alarmo",
@@ -107,6 +131,12 @@ const prizes = [
     image: "https://m.media-amazon.com/images/I/717z5zjuBWL._AC_SL1500_.jpg",
   },
   {
+    name: "Logitech MX Master 3S",
+    price: 80,
+    href: "https://a.co/d/07yshVHf",
+    image: "https://m.media-amazon.com/images/I/61oEwT0WpSL._AC_SL1500_.jpg",
+  },
+  {
     name: "Like-New Amazon Fire 7 tablet (newest model)",
     price: 51,
     href: "https://www.amazon.com/Like-New-Amazon-display-10-hour-battery/dp/B099GYVGW4/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Xqi1fAXbYVaVQDpectnL0hX8ExQITrTc4o_ItrC3uqUOqauZDQnOCTFTcB1c_Bw60SjjevSTJzZQYtpur7LHuq89ku07y2yqQJwfoSRbJXxbyn9_MsRXX_vWzKgzINLUMUPdtx-Rf4fTVWtGq32wwr31IohSg9jyYZZG1vw9Fvdyxjyf20Fyw_Xt7PeXeDefDs5GT7eg_OF03kQIwpetmaPhfFRXn0pQ-eKVgYZPw_XqMEBdAwLOjVQUorm3oqiwY91NejTRkg4rJH_lMbmMzLry2KWqpGp1K6eMZoOaVoo.BhrGFE6kBj5HND71FjvE61QH68F6HLZACFdjMJqtPtE&dib_tag=se&keywords=amazon+fire+5&qid=1782846063&s=amazon-devices&sr=1-1&ufe=app_do%3Aamzn1.fos.ed73e2ba-4d06-4781-aee7-c317fe036206",
@@ -123,6 +153,12 @@ const prizes = [
     price: 81,
     href: "https://www.amazon.com/dp/B0BFC7WQ6R?ref=clp_cat_p_0&th=1",
     image: "https://m.media-amazon.com/images/I/71cSMRiDN2L._AC_SL1500_.jpg",
+  },
+  {
+    name: "Logitech MX Vertical Wireless Mouse",
+    price: 119.99,
+    href: "https://a.co/d/0fHR9sPX",
+    image: "https://m.media-amazon.com/images/I/61iiZ-gDYEL._AC_SL1500_.jpg",
   },
   {
     name: "WAIT FLY Heart-shaped Bowls",
@@ -187,6 +223,18 @@ const prizes = [
     href: "https://www.apple.com/airpods-pro/",
     image:
       "https://t-mobile.scene7.com/is/image/Tmusprod/195950543698-frontimage?fmt=png-alpha&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&dpr=off",
+  },
+  {
+    name: "GEODMAER 65% Gaming Keyboard",
+    price: 25,
+    href: "https://a.co/d/01Hk9xg9",
+    image: "https://m.media-amazon.com/images/I/61fhcWFIpzL._AC_SL1500_.jpg",
+  },
+  {
+    name: "TECKNET Wired Gaming Keyboard",
+    price: 32,
+    href: "https://a.co/d/08VtvJwK",
+    image: "https://m.media-amazon.com/images/I/714WvRlURgL._AC_SL1500_.jpg",
   },
   {
     name: "Airpods 4 Noise Cancelling",
