@@ -7,6 +7,57 @@ import { PrizeHours, getPrizeHours } from "./prize-hours";
 
 const prizes = [
   {
+    name: "LEGO Icons Kingfisher Bird Model",
+    price: 55,
+    href: "https://a.co/d/0fJEyLo3",
+    image: "https://m.media-amazon.com/images/I/71Y5SfG0xSL._AC_SL1500_.jpg",
+  },
+  {
+    name: "Innioasis Y2 Mp3 Player",
+    price: 70,
+    href: "https://m.media-amazon.com/images/I/61tOfXDdFuL._AC_SL1500_.jpg",
+    image: "https://a.co/d/07s0FKhH",
+  },
+  {
+    name: "FiiO SnowSky Echo Nano mp3 player",
+    price: 60,
+    href: "https://a.co/d/0bWC7jQG",
+    image: "https://m.media-amazon.com/images/I/61uWGHDt5SL._AC_SL1000_.jpg",
+  },
+  {
+    name: "One Piece - Grand Ship Collection Red Force",
+    price: 27,
+    href: "https://a.co/d/08gcdyLO",
+    image: "https://m.media-amazon.com/images/I/61D2gpyMdFL._AC_SL1200_.jpg",
+  },
+  {
+    name: "Candle Warmer Lamp",
+    price: 25,
+    href: "https://a.co/d/00vYRnyP",
+    image: "https://m.media-amazon.com/images/I/81EaHOGHJZL._AC_SL1500_.jpg",
+  },
+  {
+    name: "Moon Lamp",
+    price: 70,
+    href: "https://a.co/d/0aUahJNy",
+    image: "https://m.media-amazon.com/images/I/61UHAOLCP+L._AC_SL1200_.jpg",
+  },
+  {
+    name: "$30USD book grant",
+    price: 35,
+    href: "https://www.barnesandnoble.com/",
+    image:
+      "https://etzq49yfnmd.exactdn.com/wp-content/uploads/2022/03/book_money.jpg?strip=all",
+  },
+  {
+    name: "$60USD book grant",
+    price: 65,
+    href: "https://www.barnesandnoble.com/",
+    image:
+      "https://etzq49yfnmd.exactdn.com/wp-content/uploads/2022/03/book_money.jpg?strip=all",
+  },
+
+  {
     name: "Apple iPad, 2025 128GB WIFI + CELL Renewed",
     price: 355.99,
     href: "https://www.amazon.com/Apple-11-inch-Wi-Fi-Cellular-128GB/dp/B0F636Z3NS/ref=sr_1_3?crid=1BNR2CPTGGJSP&dib=eyJ2IjoiMSJ9.9ffvSXuh6USykgDxAC6OnXMD1Rk05aU81b5NB15UUrTfQI3xyfO-Scl3LKhSDZc0IQS3QAm5quFg8h_8E3XPNA3du1AIziU6e7hRq6Xvsqr8tSElsNcojf23BzHAv1C6Pxp9R5BR9TFK2QLMB-Zxtr29YBMlxiO9KWgz0FcoiGtndvnKb_ogjxKprczLKL5mohmFE_60HVQClT5ACu3AVn8HJ9vox9BoCIFYUFiTkvQ.oJUks03eCYYN8u67Li5xOiz0-VC2MWiRPwtKpx6XaOI&dib_tag=se&keywords=ipad&qid=1782942267&sprefix=ipad%2Caps%2C176&sr=8-3&th=1",
