@@ -15,8 +15,8 @@ const prizes = [
   {
     name: "Innioasis Y2 Mp3 Player",
     price: 70,
-    href: "https://m.media-amazon.com/images/I/61tOfXDdFuL._AC_SL1500_.jpg",
-    image: "https://a.co/d/07s0FKhH",
+    image: "https://m.media-amazon.com/images/I/61tOfXDdFuL._AC_SL1500_.jpg",
+    href: "https://a.co/d/07s0FKhH",
   },
   {
     name: "FiiO SnowSky Echo Nano mp3 player",
@@ -41,6 +41,13 @@ const prizes = [
     price: 70,
     href: "https://a.co/d/0aUahJNy",
     image: "https://m.media-amazon.com/images/I/61UHAOLCP+L._AC_SL1200_.jpg",
+  },
+  {
+    name: "$5USD book grant (stackable)",
+    price: 5,
+    href: "https://www.barnesandnoble.com/",
+    image:
+      "https://etzq49yfnmd.exactdn.com/wp-content/uploads/2022/03/book_money.jpg?strip=all",
   },
   {
     name: "$30USD book grant",
