@@ -13,6 +13,12 @@ const prizes = [
     image: "https://m.media-amazon.com/images/I/71Y5SfG0xSL._AC_SL1500_.jpg",
   },
   {
+    name: "DUMOS 32 Inch Small Computer Desk",
+    price: 34,
+    href: "https://a.co/d/04jbACM4",
+    image: "https://m.media-amazon.com/images/I/71qMy5CDPBL._AC_SL1500_.jpg",
+  },
+  {
     name: "Innioasis Y2 Mp3 Player",
     price: 70,
     image: "https://m.media-amazon.com/images/I/61tOfXDdFuL._AC_SL1500_.jpg",
