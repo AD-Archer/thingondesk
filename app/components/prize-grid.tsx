@@ -13,6 +13,13 @@ const prizes = [
     image: "https://m.media-amazon.com/images/I/71Y5SfG0xSL._AC_SL1500_.jpg",
   },
   {
+    name: "Steam Gift Card $25",
+    price: 27,
+    href: "https://store.steampowered.com/digitalgiftcards/selectgiftcard",
+    image:
+      "https://store.fastly.steamstatic.com/public/images/gift/steam_logo_digitalgiftcard.png",
+  },
+  {
     name: "DUMOS 32 Inch Small Computer Desk",
     price: 34,
     href: "https://a.co/d/04jbACM4",
@@ -151,8 +158,8 @@ const prizes = [
   {
     name: "YUNZII B75 PRO",
     price: 65,
-    href: "https://m.media-amazon.com/images/I/71e0j3u-WUL._AC_SL1500_.jpg",
-    image: "https://a.co/d/03MzJUFb",
+    href: "https://a.co/d/03MzJUFb",
+    image: "https://m.media-amazon.com/images/I/71e0j3u-WUL._AC_SL1500_.jpg",
   },
   {
     name: "Nintendo Sound Clock: Alarmo",
